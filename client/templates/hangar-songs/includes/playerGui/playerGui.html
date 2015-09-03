@@ -1,0 +1,27 @@
+<template name="playerGui">
+	<div class="heading">
+		{{#unless playerOrform}}
+			<h3>now playing</h3>
+			<h2 id="currentVideoTitle">{{currentSong.title}}</h2>
+			<h3 id="currentVideoOwner">{{currentSong.email}}</h3>
+			<div class="player">
+				{{#unless hasInit}}
+					{{#if hasQueue}}
+						<a class="playerInit playerBtn glyphicon glyphicon-play" href="#"></a>
+					{{/if}}
+				{{else}}
+					{{#unless isPlaying}}
+						<a class="playerPlay playerBtn  glyphicon glyphicon-play" href="#"></a>
+					{{else}}
+						<a class="playerPause playerBtn glyphicon glyphicon-pause" href="#"></a>
+					{{/unless}}
+					{{#if hasQueue}}
+						<a class="playerNext playerBtn glyphicon glyphicon-forward" href="#"></a>
+					{{/if}}
+				{{/unless}}
+			</div>
+		{{else}}
+			{{> addSongForm}}
+		{{/unless}}
+	</div>
+</template>

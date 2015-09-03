@@ -1,0 +1,46 @@
+@media only screen and (max-width: 767px) {
+	.navbar-collapse.collapse, .navbar-collapse.collapsing{
+    	padding-left: 15px;
+    }
+}
+@media only screen and (max-width: 599px) {
+	.song{
+		display: block;
+	}
+
+	.song img {
+		width: 100%;
+	}
+	.song-info {
+		width: 70%;
+	}
+
+	#addedSongs .song-info {
+		width: 65%;
+	}
+
+	.songResult img { 
+		width: 100%;
+	}
+	.song-image {
+		width: 20%;
+	}
+
+	.song-info .song-title {
+		font-weight: bold;
+		font-size: 14px;
+		color: #000;
+		padding-top: 0;
+		display: block;
+	}
+
+	.song-info .song-title a {
+		color: #1b1e25;
+	}
+	.myCurrentSong p{
+		width: 78%;
+	}
+	#theclub .onePlayer .img{
+		width: 13%;
+	}
+}

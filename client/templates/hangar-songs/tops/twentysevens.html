@@ -1,0 +1,49 @@
+<template name="twentysevens">
+	<div id="theclub">
+			<div class="topPlayers col-lg-6">
+				<div class="topPlayers col-md-12">
+					<h1 class="topPlayerTitle top-titles">Top 27 Players</h1>
+				</div>
+				{{#each tops}}
+					{{> onePlayer}}
+			    {{/each}}
+			</div>
+			<div class="topSongs col-lg-6">
+				<div class="topSongs col-md-12">
+					<h1 class="topSongTitle top-titles">Top 27 Songs</h1>
+				</div>
+				{{#each topSongs}}
+					{{> oneSong}}
+			    {{/each}}
+			</div>
+		</div>
+</template>
+
+<template name="onePlayer">
+	<div class="onePlayer">
+		<div class="img">
+			<img src="http://performance.thehangar.cr{{img}}">
+		</div>
+		<div class="info">
+			<p class="name">{{name}}</p>
+			<p class="department">{{department}}</p>
+		</div>
+		<div class="playerLikes">
+			{{likes}}
+		</div>
+	</div>
+</template>
+
+<template name="oneSong">
+	<div class="oneSong">
+		<div class="img">
+			<img src="{{img}}">
+		</div>
+		<div class="info">
+			<p><a href="https://www.youtube.com/watch?v={{uTubeId}}" target="_blank">{{title}}</a></p>
+		</div>
+		<div class="playerLikes">
+			{{likesCount}}
+		</div>
+	</div>
+</template>

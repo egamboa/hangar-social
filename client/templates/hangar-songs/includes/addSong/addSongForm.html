@@ -1,0 +1,12 @@
+<template name="addSongForm">
+	<div class="add-a-song">
+		<div class="input-group">
+	      <input type="text" id="utube-search" class="form-control search-input" placeholder="Search for your song...">
+	      <span class="magnifyer"></span>
+	    </div><!-- /input-group -->
+	    <script type="text/javascript">
+	    	reactiveSearch.init();
+	    </script>
+	    {{> songSearch}}
+	</div>
+</template>

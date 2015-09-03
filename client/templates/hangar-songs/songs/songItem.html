@@ -1,0 +1,66 @@
+<template name="songItem">
+	<div class="song">
+    	<div class="meta">
+    		<div class="song-image">
+				<img src="{{img}}">
+			</div>
+			<div class="song-info">
+				<span class="song-title">
+					<a href="https://www.youtube.com/watch?v={{uTubeId}}" target="_blank">{{title}}</a>
+				</span>
+			</div>
+			<div class="vote-holder text-center">
+				{{#unless currentUser}}
+						{{> votingNotAllow}}
+				{{else}}
+					{{#if toggleEdit}}
+						<a href="#" class="deleteSong">
+							<span class="glyphicon glyphicon-remove-sign"></span>
+						</a>
+					{{else}}
+						{{#if alreadyVoted this}}
+							{{> votingVoted}}
+						{{else}}
+							{{#unless valid "meteor_valid"}}
+								{{> votingNotAllow}}
+							{{else}}
+								{{> votingAllow}}
+							{{/unless}}
+						{{/if}}
+					{{/if}}
+				{{/unless}}
+			</div>
+    	</div>
+	</div>
+</template>
+
+<template name="votingAllow">
+	<div class="like-holder not-voted">
+		<a href="#" class="like-vote">
+			<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+			<span class="number">{{likes.length}}</span>
+		</a>
+	</div>
+</template>
+
+<template name="votingVoted">
+	<div class="like-holder voted">
+		<span class="like-status">
+			<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+			<span class="number">{{likes.length}}</span>
+		</span>
+		<a href="#" class="dislike-vote">
+			<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+			<span class="number">{{likes.length}}</span>
+		</a>
+	</div>
+</template>
+
+<template name="votingNotAllow">
+	<div class="like-holder not-allow">
+		<span class="like-status">
+			<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+			<span class="number">{{likes.length}}</span>
+		</span>
+	</div>
+</template>

@@ -1,0 +1,56 @@
+/* CSS declarations go here */
+@font-face {
+    font-family: opensans-light;
+    src: url("/fonts/Open_Sans/OpenSans-Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: opensans-bold;
+    src: url("/fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
+}
+html, body{
+  height: 100%;
+}
+body { 
+	/*background-image: url(images/sj.jpg); 
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;*/
+	background-color: #fff9f8;
+	font-family: opensans-light;
+}
+
+h1 {
+	font-size: 1em;
+	color: #fff;
+	font-style: italic;
+	line-height: 33px;
+	margin: 0;
+}
+
+h2, 
+h3 {
+	color: #fff;
+	font-size: 2,87375em;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.0625em;
+}
+header iframe .pluginButtonInline{
+	background-color: transparent;
+	color: #fff;
+}
+.footer{
+	color: #fff;
+	font-family: opensans-bold;
+}
+.footer .copy{
+	font-size: 14px;
+	font-weight: bold;
+}
+.footer .copy sup{
+	font-size: 8px;
+}

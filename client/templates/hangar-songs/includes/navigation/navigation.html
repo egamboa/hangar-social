@@ -1,0 +1,46 @@
+<template name="navigation">
+	<div id="navigation" class="col-md-3">
+		<!-- Nav tabs -->
+		<ul class="sidebar" role="tablist">
+			<li role="presentation" class="active nav-elements ranking">
+				<a href="#adding" aria-controls="adding" role="tab" data-toggle="tab">
+					Ranking
+				</a>
+			</li>
+			<li role="presentation" class="nav-elements theClub">
+				<a href="#tops" aria-controls="tops" role="tab" data-toggle="tab">27 Club</a>
+			</li>
+			{{#if nowPlaying}}
+				<li role="presentation" class="nav-elements now-playing">
+					<p class="title">{{nowPlaying.title}}</p>
+					<p class="owner">{{nowPlaying.email}}</p>
+				</li>
+			{{else}}
+				<li role="presentation" class="nav-elements not-playing">
+					Nothing is Playing
+				</li>
+			{{/if}}
+			<!--<li role="presentation" class="nav-elements">
+				{{> loginTemplate}}
+			</li>
+			<li class="last-item">
+				<a href="#about" 
+				   aria-controls="tops" 
+				   role="tab" 
+				   data-toggle="tab">
+				   About
+				</a>
+			</li>-->
+			<!--
+			<li role="presentation" class="nav-elements top-player">
+				{{#if topPlayer}}
+					{{#each topPlayer}}
+						{{name}}
+					{{/each}}
+				{{else}}
+					Top Player
+				{{/if}}
+			</li>-->
+		</ul>
+	</div>
+</template>

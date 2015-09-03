@@ -1,0 +1,80 @@
+#cocinando .header-buffer{
+    padding: 10px 10px 20px;
+    background-color: #ffffda;
+    margin-bottom: 15px;
+}
+#cocinando .header-buffer h1{
+	color: #000;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#cocinando .header-buffer img{
+	padding: 10px;
+} 
+
+#cocinando .recipe{
+    padding:0 10px;
+    height: 200px;
+    -webkit-transition: opacity 2s; /* Safari */
+    transition: opacity 2s;
+}
+
+#cocinando .recipe .after{
+    width:95%;
+    height:200px;
+    position: absolute;
+    top:0;
+    z-index : 5;
+    opacity: 0; 
+    -webkit-transition: opacity 0.5s; /* Safari */
+    transition: opacity 0.5s;
+}
+
+#cocinando .recipe .after h3{
+    width: 100%;
+    height: 200px;
+    margin:auto;
+    vertical-align:middle;
+    line-height:190px;
+    text-align: center;
+    opacity: 1;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#cocinando .recipe .after h3 a{
+	color: #fff;
+	text-decoration: none;
+}
+#cocinando .recipe .after h3 a:hover{
+	text-decoration: underline;
+}
+
+#cocinando .recipe:hover .after{
+    opacity : 1;
+    -webkit-transition: opacity 1s; /* Safari */
+    transition: opacity 1s;
+    background-color: #000;
+}
+
+#cocinando .recipe .actual{
+    width: 100%;
+    margin:0 auto;
+    top:0;
+    -webkit-transition: opacity 1s; /* Safari */
+    transition: opacity 1s;
+}
+
+#cocinando .recipe:hover .actual{
+    opacity : 0;
+}
+
+#cocinando .recipe .actual img{
+    max-height:200px;
+    width: 100%;
+}
+
+#cocinando .recipe:hover .actual img{
+    opacity: 0;
+}

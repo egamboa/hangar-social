@@ -1,0 +1,22 @@
+<template name="songSearch">
+	<div id="songSearch">
+		{{#each searchResult}}
+	        <div class="songResult song">
+	        	<div class="meta">
+	        		<div class="song-image">
+						<img src="{{snippet.thumbnails.default.url}}">
+					</div>
+					<div class="song-info">
+						<span class="song-title">{{snippet.title}}</span>
+						<p class="song-description">{{snippet.description}}</p>
+					</div>
+					<div class="add-holder text-center">
+						<a href="#" class="add-to-queue">
+							<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+						</a>
+					</div>
+	        	</div>
+			</div>
+	    {{/each}}
+	</div>
+</template>

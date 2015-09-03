@@ -1,0 +1,45 @@
+<template name="hangarSongs">
+	{{> errorMessage}}
+	{{#if isPlayer}}
+		<div class="videoEmbeded">
+			<div id="player"></div>
+		</div>
+	{{/if}}
+	<div class="container {{#if currentUser}}logged{{else}}not-logged{{/if}}">
+		<div class="row app-holder">
+				<div role="tabpanel" class="col-md-12">
+					{{#unless isPlayer}}
+						{{> navigation}}
+					{{/unless}}
+					<!-- Tab panes -->
+					<div class="tab-content {{#if isPlayer}} col-md-12 {{else}} col-md-9 {{/if}}">
+						{{#unless isPlayer}}
+							<div class="heading row">
+								<div class="addASong text-center col-lg-12">
+									{{#if currentUser}}
+										{{#if ableToAdd}}
+											{{#if valid "meteor_valid"}}
+												{{> addSongForm}}
+											{{/if}}
+										{{else}}
+											{{> currentSong}}
+										{{/if}}
+									{{/if}}
+								</div>
+							</div>
+						{{/unless}}
+						<div role="tabpanel" class="tab-pane active" id="adding">
+							{{#if isPlayer}}
+								{{> playerGui}}
+							{{/if}}
+							{{> addedSongs}}
+						</div>
+						<div role="tabpanel" class="tab-pane row" id="tops">
+							{{> twentysevens}}
+						</div>
+						<div role="tabpanel" class="tab-pane" id="about">about</div>
+					</div>
+				</div>
+			</div>
+	</div> <!-- End container -->
+</template>

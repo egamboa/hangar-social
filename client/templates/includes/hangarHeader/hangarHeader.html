@@ -1,0 +1,78 @@
+<template name="hangarHeader">
+	<header class="container">
+		<nav class="navbar" role="navigation">
+		    <div class="container-fluid">
+		      <div class="navbar-header">
+		        <button type="button" class="mobile-menu-button navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-nav">
+		          <span class="sr-only">Toggle navigation</span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		        </button>
+		        <div id="hangar-logo" class="pull-left">
+						<a href="/">
+							<img src="/images/btn-home.jpg">
+						</a>
+					</div>
+		      </div>
+		      <div class="collapse navbar-collapse" id="mobile-nav">
+		        <ul class="nav navbar-nav navbar-right">
+		        	{{> loginButtons}}
+		        	<li role="presentation" class="active mob-elements ranking">
+						<a href="#adding" aria-controls="adding" role="tab" data-toggle="tab">
+							Ranking
+						</a>
+					</li>
+					<li role="presentation" class="mob-elements theClub">
+						<a href="#tops" aria-controls="tops" role="tab" data-toggle="tab">27 Club</a>
+					</li>
+					<!--<li class="mob-elements last-item">
+						<a href="#about" 
+						   aria-controls="tops" 
+						   role="tab" 
+						   data-toggle="tab">
+						   About
+						</a>
+					</li>-->
+					{{#if nowPlaying}}
+						<li role="presentation" class="mob-elements now-playing">
+							<p class="section-title">NOW PLAYING</p>
+							<p class="title">{{nowPlaying.title}}</p>
+							<p class="owner">{{nowPlaying.email}}</p>
+						</li>
+					{{else}}
+						<li role="presentation" class="mob-elements not-playing">
+							Nothing is Playing
+						</li>
+					{{/if}}
+		        </ul>
+		      </div>
+		    </div>
+		  </nav>
+	</header>
+</template>
+
+<template name="loginTemplate">
+	<div id="login-holder" class="pull-right">
+		{{#if currentUser}}
+			{{#unless valid "meteor_valid"}}
+				{{> verifyEmail}}
+			{{else}}
+				{{#if canAddCheck}}
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+				{{else}}
+					{{> cantAdd}}
+				{{/if}}
+			{{/unless}}		
+		{{/if}}
+		{{> loginButtons align="right"}}
+	</div>
+</template>
+
+<template name="cantAdd">
+	<span class="glyphicon glyphicon-user infoPopover" aria-hidden="true" data-container="body" data-toggle="cantAdd" data-placement="left" data-content="You already added 1 song."></span>
+</template>
+
+<template name="verifyEmail">
+	<span class="glyphicon glyphicon-user infoPopover" aria-hidden="true" data-container="body" data-toggle="verifyEmail" data-placement="left" data-content="Please check your inbox and verify your account."></span>
+</template>
