@@ -16,8 +16,6 @@
 #cocinando .recipe{
     padding:0 10px;
     height: 200px;
-    -webkit-transition: opacity 2s; /* Safari */
-    transition: opacity 2s;
 }
 
 #cocinando .recipe .after{
@@ -27,8 +25,8 @@
     top:0;
     z-index : 5;
     opacity: 0; 
-    -webkit-transition: opacity 0.5s; /* Safari */
-    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.6s; /* Safari */
+    transition: opacity 0.6s;
 }
 
 #cocinando .recipe .after h3{
@@ -62,8 +60,6 @@
     width: 100%;
     margin:0 auto;
     top:0;
-    -webkit-transition: opacity 1s; /* Safari */
-    transition: opacity 1s;
 }
 
 #cocinando .recipe .actual img{
