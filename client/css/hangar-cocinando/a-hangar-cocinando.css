@@ -1,7 +1,8 @@
 #cocinando .header-buffer{
-    padding: 10px 10px 20px;
+    padding-top: 60px;
     background-color: #ffffda;
     margin-bottom: 15px;
+    height: 1050px;
 }
 #cocinando .header-buffer h1{
 	color: #000;
