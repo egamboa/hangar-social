@@ -1,17 +1,23 @@
 #cocinando .header-buffer{
-    padding: 10px 10px 20px;
-    background-color: #ffffda;
-    margin-bottom: 15px;
+    padding-top: 60px;
+    background-color: #999999;
+    height: 1050px;
 }
+
 #cocinando .header-buffer h1{
-	color: #000;
+	color: #fff;
 	font-size: 20px;
-	font-weight: bold;
+    margin-top: 71px;
 }
 
 #cocinando .header-buffer img{
 	padding: 10px;
 } 
+
+#cocinando .header-img {
+    width: 800px;
+    height: 800px;
+}
 
 #cocinando .recipe{
     height: 394px;
