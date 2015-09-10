@@ -1,75 +1,74 @@
-#cocinando .header-buffer{
-    padding-top: 60px;
-    background-color: #54646C;
-    height: 1050px;
+.cocinando{
+    font-family: din-regular;
+}
+.cocinando .section{
+    background-color: #f5f5c2;
 }
 
-#cocinando .header-buffer h1{
-	color: #fff;
+.cocinando .header-buffer{
+
+}
+
+.cocinando .header-buffer h1{
+	color: #000;
 	font-size: 20px;
     margin-top: 71px;
 }
 
-#cocinando .header-buffer img{
-    /*  Only for testing purposes.
-        This should be modified as soon as the svg image is placed in the page. 
-    */
+.cocinando .header-buffer img{
     width: 800px;
     height: 800px;
 }
 
-#cocinando .recipe{
-    height: 394px;
+.cocinando .recipe{
+    height: 359px;
+    overflow: hidden;
     padding: 0;
+    position: relative;
 }
 
-#cocinando .recipe .after{
+.cocinando .recipe .after, .cocinando .recipe .actual, .cocinando .recipe .actual img{
+    display: block;
+    height: 359px;
     width: 100%;
-    height:394px;
+}
+
+.cocinando .recipe .actual{ 
+    top:0;
+}
+
+.cocinando .recipe .after{
+    -webkit-transition: opacity 0.6s; /* Safari */
+    display: table;
+    opacity: 0; 
     position: absolute;
     top:0;
-    z-index : 5;
-    opacity: 0; 
-    -webkit-transition: opacity 0.6s; /* Safari */
     transition: opacity 0.6s;
+    z-index : 5;
 }
 
-#cocinando .recipe .after h3{
-    width: 100%;
-    height: 394px;
-    margin:auto;
-    vertical-align:middle;
-    line-height:396px;
-    font: georgia italic 18px;
-    text-align: center;
-    opacity: 1;
+.cocinando .recipe .after h3{
+    display: table-cell;
     font-size: 30px;
     font-weight: bold;
+    opacity: 1;
+    vertical-align: middle;
 }
 
-#cocinando .recipe .after h3 a{
-	color: #fff;
-	text-decoration: none;
+.cocinando .recipe .after h3 a{
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 3px solid #fff;
+    text-transform: uppercase; 
+    font-family: din-bold;
 }
-#cocinando .recipe .after h3 a:hover{
-	text-decoration: underline;
+.cocinando .recipe .after h3 span{
+    font-family: georgia-italic;
+    font-size: 18px;
 }
-
-#cocinando .recipe:hover .after{
-    opacity : 1;
+.cocinando .recipe:hover .after{
     -webkit-transition: opacity 1s; /* Safari */
-    transition: opacity 1s;
     background-color: #000;
-}
-
-#cocinando .recipe .actual{ 
-    top:0;
-    height: 394px;
-}
-
-#cocinando .recipe .actual img{
-    display: block;
-    margin: auto;
-    height: 100%;
-    width: 100%;
+    opacity : 1;
+    transition: opacity 1s;
 }

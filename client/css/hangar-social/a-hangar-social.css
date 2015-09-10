@@ -7,6 +7,19 @@
     font-family: opensans-bold;
     src: url("/fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
 }
+@font-face {
+    font-family: din-regular;
+    src: url("/fonts/DIN-Regular.otf") format("truetype");
+}
+@font-face {
+    font-family: din-bold;
+    src: url("/fonts/DIN-Bold.otf") format("truetype");
+}
+@font-face {
+    font-family: georgia-italic;
+    src: url("/fonts/geo-ita.ttf") format("truetype");
+}
+/* CSS declarations go here */
 html, body{
   height: 100%;
 }

@@ -1,83 +1,33 @@
 <template name="cocinando">
-	<div class="container" id="cocinando">
-		<div class="row app-holder">
-			<div role="tabpanel" class="col-md-12">
-				<header class="container">
-
-					<div class="text-center">
-						<div class="header-buffer">
-							<img class="img-responsive center-block" src="images/cocinando/header.png" alt="Tradiciones. Sabores, colores y olores costarricenses">
-							<h1>Make your own Costa Rican meal! <br> Options below.</h1>
-						</div>
-					</div>
-				</header>
-				<div class="container">
-					<div class=" recipes">
-						<div class="col-sm-4 recipe">
-							<div class="actual">
-								<img src="images/cocinando/dish.png"> 
-							</div>
-							<div class="after">
-								<h3>
-									<a href="http://farm8.staticflickr.com/7496/15959236842_6dbcb5b4c8_b.jpg" class="fancybox" rel="gallery" title="Gallo Pinto">Gallo Pinto</a>
-								</h3>
-							</div>
-						</div>
-						<div class="col-sm-4 recipe">
-							<div class="actual">
-								<img src="images/cocinando/dish.png"> 
-							</div>
-							<div class="after">
-								<h3>
-									<a href="http://farm8.staticflickr.com/7496/15959236842_6dbcb5b4c8_b.jpg" class="fancybox" rel="gallery" title="Gallo Pinto 2">Gallo Pinto</a>
-								</h3>
-							</div>
-						</div>
-						<div class="col-sm-4 recipe">
-							<div class="actual">
-								<img  src="images/cocinando/dish.png"> 
-							</div>
-							<div class="after">
-								<h3>
-									<a href="http://farm8.staticflickr.com/7496/15959236842_6dbcb5b4c8_b.jpg" class="fancybox" rel="gallery" title="Gallo Pinto 3">Gallo Pinto</a>
-								</h3>
-							</div>
-						</div>
-						<div class="col-sm-4 recipe">
-							<div class="actual">
-								<img src="images/cocinando/dish.png"> 
-							</div>
-							<div class="after">
-								<h3>
-									<a href="http://farm8.staticflickr.com/7496/15959236842_6dbcb5b4c8_b.jpg" class="fancybox" rel="gallery" title="Gallo Pinto">Gallo Pinto</a>
-								</h3>
-							</div>
-						</div>
-
-						<div class="col-sm-4 recipe">
-							<div class="actual">
-								<img src="images/cocinando/dish.png"> 
-							</div>
-							<div class="after">
-								<h3>
-									<a href="http://farm8.staticflickr.com/7496/15959236842_6dbcb5b4c8_b.jpg" class="fancybox" rel="gallery" title="Gallo Pinto">Gallo Pinto</a>
-								</h3>
-							</div>
-						</div>
-
-						<div class="col-sm-4 recipe">
-							<div class="actual">
-								<img src="images/cocinando/dish.png"> 
-							</div>
-							<div class="after">
-								<h3>
-									<a href="http://farm8.staticflickr.com/7496/15959236842_6dbcb5b4c8_b.jpg" class="fancybox" rel="gallery" title="Gallo Pinto">Gallo Pinto</a>
-								</h3>
-							</div>
-						</div>
+	<div id="fullpage" class="cocinando">
+	    <div class="section">
+	    	<header class="container">
+				<div class="text-center">
+					<div class="header-buffer">
+						<img class="img-responsive center-block" src="images/cocinando/main-header.svg" alt="Tradiciones. Sabores, colores y olores costarricenses">
+						<h1>Make your own Costa Rican meal! <br> Options below.</h1>
 					</div>
 				</div>
+			</header>
+	    </div>
+	    <div class="section">
+	    	<div class="container">
+				<div class="recipes">
+				{{#each recepies_p1}}
+					<div class="col-sm-4 recipe">
+						<div class="actual">
+							<img src="{{thumbnail}}"> 
+						</div>
+						<div class="after">
+							<h3>
+								<a href="{{recepie_img}}" class="fancybox" rel="gallery" title="{{name}}">{{name}}</a>
+								<br /><span class="subtile">{{subtitle}}</span>
+							</h3>
+						</div>
+					</div>
+				{{/each}}
+				</div>
 			</div>
-		</div>
+	    </div>
 	</div>
 </template>
