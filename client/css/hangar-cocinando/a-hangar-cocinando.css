@@ -1,6 +1,6 @@
 #cocinando .header-buffer{
     padding-top: 60px;
-    background-color: #999999;
+    background-color: #54646C;
     height: 1050px;
 }
 
@@ -11,10 +11,9 @@
 }
 
 #cocinando .header-buffer img{
-	padding: 10px;
-} 
-
-#cocinando .header-img {
+    /*  Only for testing purposes.
+        This should be modified as soon as the svg image is placed in the page. 
+    */
     width: 800px;
     height: 800px;
 }
