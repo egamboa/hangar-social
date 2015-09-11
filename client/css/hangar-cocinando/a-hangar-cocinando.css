@@ -54,26 +54,28 @@
 
 .cocinando .recipe .after h3{
     display: table-cell;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: bold;
+    font-family: din-bold;
     opacity: 1;
     vertical-align: middle;
 }
 
 .cocinando .recipe .after h3 a{
-    color: #fff;
+    color: #000;
     text-decoration: none;
-    border-bottom: 3px solid #fff;
+    border-bottom: 2px solid #888;
     text-transform: uppercase; 
     font-family: din-bold;
 }
 .cocinando .recipe .after h3 span{
+    color: #888;
     font-family: georgia-italic;
     font-size: 18px;
 }
 .cocinando .recipe:hover .after{
     -webkit-transition: opacity 1s; /* Safari */
-    background-color: #000;
+    background-color: #ffffff;
     opacity : 1;
     transition: opacity 1s;
 }
