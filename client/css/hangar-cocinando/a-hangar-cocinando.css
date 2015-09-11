@@ -12,12 +12,15 @@
 .cocinando .header-buffer h1{
 	color: #000;
 	font-size: 20px;
-    margin-top: 71px;
 }
 
 .cocinando .header-buffer img{
+    /*
     width: 800px;
     height: 800px;
+    */
+    padding-top: 60px;
+    margin-bottom: 71px;
 }
 
 .cocinando .recipe{
