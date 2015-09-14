@@ -9,7 +9,9 @@ Template.cocinando.rendered = function () {
     });
 
 	if ( window.matchMedia("(min-width: 970px)").matches ) {
-		$('#fullpage').fullpage();
+		$('#fullpage').fullpage({
+			loopHorizontal: false
+		});
 	}
 };
 
