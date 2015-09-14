@@ -1,5 +1,12 @@
 Template.cocinando.rendered = function () {
-	$('.fancybox').fancybox();
+	$(".fancybox")
+    .attr('rel', 'gallery')
+    .fancybox({
+        padding : 50, 
+        tpl: {
+	    	closeBtn: '<a title="Close" class="fancybox-item fancybox-close fancyClose" href="javascript:;"></a>'
+		}
+    });
 
 	if ( window.matchMedia("(min-width: 970px)").matches ) {
 		$('#fullpage').fullpage();
