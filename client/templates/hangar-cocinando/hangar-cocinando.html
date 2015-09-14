@@ -13,37 +13,38 @@
 	    <div class="section">
 	    	<div class="container">
 				<div class="recipes">
-				<div class="slide" data-anchor="slide1">
-					{{#each recepies_p1}}
-						<div class="col-xs-12 col-sm-6 col-md-4 recipe">
-							<div class="actual">
-								<img src="{{thumbnail}}"> 
+					<div class="slide" data-anchor="slide1">
+						{{#each recepies_p1}}
+							<div class="col-xs-12 col-sm-6 col-md-4 recipe">
+								<div class="actual">
+									<img src="{{thumbnail}}"> 
+								</div>
+								<div class="after">
+									<h3>
+										<a href="{{recepie_img}}" class="fancybox" rel="gallery" title="{{name}}">{{name}}</a>
+										<br /><span class="subtile">{{subtitle}}</span>
+										<span class='type'>{{type}}</span>
+									</h3>
+								</div>
 							</div>
-							<div class="after">
-								<h3>
-									<a href="{{recepie_img}}" class="fancybox" rel="gallery" title="{{name}}">{{name}}</a>
-									<br /><span class="subtile">{{subtitle}}<br />{{type}}</span>
-								</h3>
+						{{/each}}	
+					</div>
+					<div class="slide" data-anchor="slide2">
+						{{#each recepies_p2}}
+							<div class="col-xs-12 col-sm-6 col-md-4 recipe">
+								<div class="actual">
+									<img src="{{thumbnail}}"> 
+								</div>
+								<div class="after">
+									<h3>
+										<a href="{{recepie_img}}" class="fancybox" rel="gallery" title="{{name}}">{{name}}</a>
+										<br /><span class="subtile">{{subtitle}}</span>
+										<span class='type'>{{type}}</span>
+									</h3>
+								</div>
 							</div>
-						</div>
-					{{/each}}	
-				</div>
-				<div class="slide" data-anchor="slide2">
-					{{#each recepies_p2}}
-						<div class="col-xs-12 col-sm-6 col-md-4 recipe">
-							<div class="actual">
-								<img src="{{thumbnail}}"> 
-							</div>
-							<div class="after">
-								<h3>
-									<a href="{{recepie_img}}" class="fancybox" rel="gallery" title="{{name}}">{{name}}</a>
-									<br /><span class="subtile">{{subtitle}}<br />{{type}}</span>
-								</h3>
-							</div>
-						</div>
-					{{/each}}	
-				</div>
-				
+						{{/each}}	
+					</div>
 				</div>
 			</div>
 	    </div>
