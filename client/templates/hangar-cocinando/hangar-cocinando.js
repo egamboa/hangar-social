@@ -1,10 +1,8 @@
 Template.cocinando.rendered = function () {
 	$(".fancybox")
     .fancybox({
-    	autoResize: false,
         padding : 50,
         margin: 50,
-        minWidth: 900,
         preload: 2,
         tpl: {
 	    	closeBtn: '<a title="Close" class="fancybox-item fancybox-close fancyClose" href="javascript:;"></a>'
@@ -23,12 +21,6 @@ Template.cocinando.rendered = function () {
     	$.fn.fullpage.setAllowScrolling(false);
     	$.fn.fullpage.setKeyboardScrolling(false);
     });
-
-	if ( window.matchMedia("(min-width: 970px)").matches ) {
-		$('#fullpage').fullpage({
-			loopHorizontal: false
-		});
-	}
 };
 
 Template.cocinando.helpers({

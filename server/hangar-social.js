@@ -8,7 +8,6 @@ Accounts.config({
 });
 
 Accounts.validateNewUser(function (user) {
-
     var email = user.emails[0].address,
     domain = email.slice(email.lastIndexOf('@') + 1, email.length),
     cmUsername = email.slice(0, email.lastIndexOf('@')),
