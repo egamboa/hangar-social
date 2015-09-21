@@ -1,18 +1,15 @@
-<template name="happybsNav">
-	<div class="happybs-nav">
-		<ul>
-			<li>Enero</li>
-			<li>Febrero</li>
-			<li>Marzo</li>
-			<li>Abril</li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-	</div>
+<template name="happyBsNav">
+	<div class="container-fluid">
+		<div class="happyBs-nav">
+			<nav class="navbar">
+				<div class="collapse navbar-collapse">
+					<ul class="nav nav-pills nav-stacked">
+						{{#each months}}
+							<li id="{{id}}" class=""><a class="nav" href="#">{{name}}</a></li>
+						{{/each}}
+					</ul>
+				</div>				
+			</nav>
+		</div>
+	</div>	
 </template>

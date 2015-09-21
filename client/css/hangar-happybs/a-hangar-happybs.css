@@ -1,0 +1,29 @@
+.happyBs {
+	font-family: din-regular;
+}
+
+.happyBs .happyBs-nav {
+	width: 300px;
+	height: 500px;
+	position: absolute;
+	top: 300px;
+	left: 65px;
+}
+
+.happyBs .nav-pills > li > a {
+	border-radius: 0;
+	border-left: 3px solid #DEAFAD;
+	color: black;
+}
+
+.happyBs .nav-stacked > li + li{
+	margin-top: 0;
+}
+
+.happyBs .nav-pills > li.active > a {
+	background-color: transparent;
+	color: black;
+	border-color: #d1706b;
+	font-family: din-bold;
+	font-size: 16px;
+}
