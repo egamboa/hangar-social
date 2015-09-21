@@ -1,31 +1,35 @@
 /* HappyBs - main */
 
-.happyBs {
+#happyBs {
 	font-family: din-regular;
 }
 
-.happyBs .happyBs-nav {
-	width: 300px;
+#happyBs .happyBs-nav {
+	width: 125px;
 	height: 500px;
-	position: absolute;
-	top: 300px;
+	position: fixed;
+	top: 400px;
 	left: 65px;
 }
 
-.happyBs .nav-pills > li > a {
+#happyBs .nav-pills > li > a {
 	border-radius: 0;
 	border-left: 3px solid #DEAFAD;
 	color: black;
+	padding-left: 5px;
 }
 
-.happyBs .nav-stacked > li + li{
+#happyBs .nav-stacked > li + li{
 	margin-top: 0;
 }
 
-.happyBs .nav-pills > li.active > a {
+#happyBs .nav-pills > li.active > a {
 	background-color: transparent;
 	color: black;
 	border-color: #d1706b;
 	font-family: din-bold;
-	font-size: 16px;
+}
+
+#happyBs .nav > li > a:hover {
+	background-color: transparent;
 }
