@@ -1,14 +1,26 @@
+/* Songs - main */
+
+#oclock{
+	background-image: url(images/sj.jpg); 
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #464646;
+	font-family: opensans-light;
+	height: 100%;
+}
+
 #login-holder {
 	margin-top: 7px;
 }
 
 #login-buttons {
 	color: #fff;
-}
-
-	#login-buttons a {
+	a {
 		text-decoration: none;
 	}
+}
 
 #login-sign-in-link {
 	display: inline-block;
@@ -30,50 +42,52 @@
 
 #login-dropdown-list {
 	top: 7px;
-}
-#login-dropdown-list input{
-	border-radius: 0 !important;
-	background-color: transparent;
-	border: none;
-	box-shadow: none;
-	border-bottom: 1px solid #333;
-	color: #333;
-}
-#login-dropdown-list > a {
-  cursor: pointer;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  background-color: #000;
-  text-transform: uppercase;
-  transition: all .2s ease-in;
-  margin-right: 15px;
-}
-#login-dropdown-list .dropdown-menu{
-	background-color: rgba(255,255,255,.9);
-	margin-top: 3px;
-	border-radius: 0px;
-	margin-right: 14px;
-}
-#login-dropdown-list .dropdown-menu button{
-	color: #fff;
-	border-radius: 0;
-	background-color: #000;
-	cursor: pointer;
-	transition: all .2s ease-in;
-	border: none;
-}
-#login-dropdown-list .dropdown-menu button:hover{
-	background-color: #fc3434;
-}
-#login-dropdown-list #login-other-options a{
-	color: #333;
-}
-#login-dropdown-list > a:hover {
-	background-color: #fc3434;
-}
-#login-dropdown-list.open > a {
-	background-color: #fc3434;
+
+	input{
+		border-radius: 0 !important;
+		background-color: transparent;
+		border: none;
+		box-shadow: none;
+		border-bottom: 1px solid #333;
+		color: #333;
+	}
+	& > a {
+		cursor: pointer;
+		color: #fff;
+		border: none;
+		padding: 5px 10px;
+		background-color: #000;
+		text-transform: uppercase;
+		transition: all .2s ease-in;
+		margin-right: 15px;
+	}
+	.dropdown-menu{
+		background-color: rgba(255,255,255,.9);
+		margin-top: 3px;
+		border-radius: 0px;
+		margin-right: 14px;
+
+		button{
+			color: #fff;
+			border-radius: 0;
+			background-color: #000;
+			cursor: pointer;
+			transition: all .2s ease-in;
+			border: none;
+			&:hover{
+				background-color: #fc3434;
+			}
+		}
+	}
+	#login-other-options a{
+		color: #333;
+	}
+	& > a:hover {
+		background-color: #fc3434;
+	}
+	&.open > a {
+		background-color: #fc3434;
+	}
 }
 
 #hangar-logo {
@@ -82,30 +96,12 @@
 	margin-top: 10px;
 	margin-left: 19px;
 	text-align: center;
-}
-.footer-holder{
-	overflow: hidden;
-	display: table;
-	text-align: center;
-	margin: 10px auto 15px;
-	width: 30%;
-}
-
-#share-this-app{
-	display: table-cell;
-	vertical-align: middle;
-	width: 60px;
-}
-.fb-like{
-	margin-top: 15px;
-	margin-left: 10px;
-	float: right;
+	img{
+		width: 100%;
+	}
 }
 .header-left{
 	width: 208px;
-}
-#hangar-logo img{
-	width: 100%;
 }
 
 .login-link-text {
@@ -128,9 +124,6 @@ body.player-user .tab-content .heading {
 	display: none;
 	text-align: center;
 }
-.addASong{
-	color:#fff;
-}
 .song{
 	overflow: hidden;
 	padding: 15px 10px 15px 20px;
@@ -144,50 +137,30 @@ body.player-user .tab-content .heading {
 	-ms-transform: translate3d(0,0,0);
 	-o-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
-}
-.song.animate {
-  -webkit-transition: all 300ms 0ms;
-  -moz-transition: all 300ms 0ms ease-in;
-  -o-transition: all 300ms 0ms ease-in;
-  transition: all 300ms 0ms ease-in;
-}
-.song .meta{
-	display: table;
-	width: 100%;
+
+	&.animate {
+		-webkit-transition: all 300ms 0ms;
+		-moz-transition: all 300ms 0ms ease-in;
+		-o-transition: all 300ms 0ms ease-in;
+		transition: all 300ms 0ms ease-in;
+	}
+
+	.meta{
+		display: table;
+		width: 100%;
+	}
+
+	&:last-child {
+		border-bottom: none;
+	}
+
+	img {
+		width: 100%;
+	}
 }
 
-.song:last-child {
-	border-bottom: none;
-}
-
-.song img {
-	width: 100%;
-}
-
-.songResult img { 
-	width: 100%;
-}
-
-.song-image {
-	width: 13%;
-	display: table-cell;
-	vertical-align: middle;
-	overflow: hidden;
-}
-
-.song-info {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: left;
-	padding: 0px 12px;
-	width: 85%;
-}
-
-.song-info .song-title {
-	font-weight: bold;
-	font-size: 14px;
-	color: #000;
-	display: block;
+body.player-user #songSearch {
+	background: rgba(255, 255, 255, .4);
 }
 
 body.player-user .song-info .song-title a{
@@ -195,15 +168,91 @@ body.player-user .song-info .song-title a{
 	font-size: 25px;
 	color: #1b1e25;
 }
-
-.song-info .song-title a {
-	color: #1b1e25;
+.player-user .add-a-song{
+	margin-top: 55px; 
 }
 
-.song-info .song-description {
-	color: #1b1e25;;
-	font-size: 12px;
-	padding-top: 8px;
+.player-user .form-control.search-input {
+	background-color: rgba(255, 255, 255, 0.5);
+	color: #000;
+}
+
+body.player-user.fs #addedSongs{
+	opacity: 0.1;
+}
+
+body.player-user #addedSongs label{
+	color: #fff;
+}
+
+.addASong{
+	color:#fff;
+
+	#songSearch {
+		position: relative;
+		margin-top: 10px;
+	}
+	.songResult{
+		img { 
+			width: 100%;
+		}
+		.song-image {
+			width: 13%;
+			display: table-cell;
+			vertical-align: middle;
+			overflow: hidden;
+		}
+		.song-info {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: left;
+			padding: 0px 12px;
+			width: 85%;
+
+			.song-title {
+				font-weight: bold;
+				font-size: 14px;
+				color: #000;
+				display: block;
+				a {
+					color: #1b1e25;
+				}
+			}
+			.song-description {
+				color: #1b1e25;;
+				font-size: 12px;
+				padding-top: 8px;
+			}
+		}
+	}
+	.add-a-song {
+		margin: 0px 0px 15px;
+		.input-group {
+			width: 100%;
+			.form-control.search-input {
+				background-color: rgba(255, 255, 255, 0.6);
+				color: #000;
+				height: 50px;
+				font-size: 20px;
+				padding-left: 60px;
+				border-radius: 0px;
+			}
+		}
+		.magnifyer {
+			font-size: 2.5625em;
+			display: inline-block;
+			position: absolute;
+			left: 20px;
+			z-index: 999;
+			top: 10px;
+			background-image: url(/images/svg/icon_search.svg);
+			width: 30px;
+			height: 30px;
+			background-size: 30px;
+			background-position: 0;
+			background-repeat: no-repeat;
+		}
+	}
 }
 
 #addedSongs {
@@ -211,38 +260,33 @@ body.player-user .song-info .song-title a{
 	padding: 0px 0px 15px;
 	margin-bottom: 15px;
 	position: relative;
-}
+	
+	label {
+		color: #000;
+		font-size: 0.75em;
+		float: right;
+		margin-left: 8px;
+		line-height: 30px;
+		margin-bottom: 0;
+		font-family: opensans-bold;
+	}
 
-#addedSongs .list {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-}
-body.player-user.fs #addedSongs{
-	opacity: 0.1;
-}
-
-#addedSongs label {
-	color: #000;
-	font-size: 0.75em;
-	float: right;
-	margin-left: 8px;
-	line-height: 30px;
-	margin-bottom: 0;
-	font-family: opensans-bold;
-}
-body.player-user #addedSongs label{
-	color: #fff;
+	.list {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
 }
 
 .order-by {
 	margin-bottom: 12px;
 	float: right;
 	position: relative;
+	input.cmn-toggle-round-flat{
+		left: -35px;
+	}
 }
-.order-by input.cmn-toggle-round-flat{
-	left: -35px;
-}
+
 .add-holder {
 	display: table-cell;
 	vertical-align: middle;
@@ -253,33 +297,34 @@ body.player-user #addedSongs label{
 	font-size: 25px;
 	color: #000;
 	transition: all .2s ease-in;
-}
-.add-to-queue:hover, .add-to-queue:focus{
-	color: #fc3434;
+	&:hover, &:focus{
+		color:#fc3434;
+	}
 }
 
 #login-buttons .login-button, 
 .accounts-dialog .login-button {
 	background-color: #111;
 }
-	#login-buttons .login-button:hover, 
-	.accounts-dialog .login-button:hover {
-		background-color: #666;
-	}
+#login-buttons .login-button:hover, 
+.accounts-dialog .login-button:hover {
+	background-color: #666;
+}
 
 .vote-holder {
 	display: table-cell;
 	vertical-align: middle;
-}
-
-	.vote-holder div {
+	div {
 		display: inline-block;
 		width: 50px;
 	}
+}
 
-	.vote:hover {
-		text-decoration: none;
-	}
+.vote-holder 
+
+.vote:hover {
+	text-decoration: none;
+}
 
 .like-holder{
 	color: #1b1e25;
@@ -327,64 +372,13 @@ body.player-user #addedSongs label{
 	height: 91%;
 }
 
-	.videoEmbeded iframe {
-		width: 100%;
-		height: 110%;
-	}
+.videoEmbeded iframe {
+	width: 100%;
+	height: 110%;
+}
 
 .app-holder {
 	z-index: 1;
-}
-
-
-/* SEARCH FORM */
-
-.add-a-song {
-	margin: 0px 0px 15px;
-}
-.player-user .add-a-song{
-	margin-top: 55px; 
-}
-.add-a-song .input-group {
-	width: 100%;
-}
-
-#songSearch {
-	position: relative;
-	margin-top: 10px;
-}
-
-body.player-user #songSearch {
-	background: rgba(255, 255, 255, .4);
-}
-
-.magnifyer {
-	font-size: 2.5625em;
-	display: inline-block;
-	position: absolute;
-	left: 20px;
-	z-index: 999;
-	top: 10px;
-	background-image: url(/images/svg/icon_search.svg);
-	width: 30px;
-	height: 30px;
-	background-size: 30px;
-	background-position: 0;
-	background-repeat: no-repeat;
-}
-
-.input-group .form-control.search-input {
-	background-color: rgba(255, 255, 255, 0.6);
-	color: #000;
-	height: 50px;
-	font-size: 20px;
-	padding-left: 60px;
-	border-radius: 0px;
-}
-
-.player-user .form-control.search-input {
-	background-color: rgba(255, 255, 255, 0.5);
-	color: #000;
 }
 
 /* PLAYER */
@@ -525,55 +519,55 @@ input.cmn-toggle-round-flat:checked:after {
 	font-size: 35px;
 }
 #theclub {
-}
-#theclub .top-titles{
-	color: #333;
-	font-family: opensans-bold;
-	text-align: center;
-	font-size: 20px;
-	font-style: normal;
-	margin: 0 0 20px;
-}
-#theclub .onePlayer{
-	padding: 10px 15px;
-	overflow: hidden;
-	display: table;
-	width: 100%;
-	height:85px;
-	background-color: rgba(255,255,255, .6);
-	margin-bottom: 10px;
-}
-#theclub .playerLikes{
-	display: table-cell;
-  	vertical-align: middle;
-  	text-align: center;
-}
-#theclub .onePlayer:last-child{
-	border-bottom: none;
-}
-#theclub .onePlayer .img{
-	padding: 0px 10px 0 0;
-	width: 55px;
-	min-width: 55px;
-	display: table-cell;
-  	vertical-align: middle;
-}
-#theclub .onePlayer .img img{
-	width: 100%;
-	max-height: 60px;
-}
-#theclub .onePlayer .info{
-	display: table-cell;
-	vertical-align: middle;
-	text-align: left;
-	width: 73%;
-}
-#theclub .onePlayer .info p{ 
-	margin-bottom: 0px;
-}
-#theclub .onePlayer .department{
-	font-size: 12px;
-}
+	.top-titles{
+		color: #333;
+		font-family: opensans-bold;
+		text-align: center;
+		font-size: 20px;
+		font-style: normal;
+		margin: 0 0 20px;
+	}
+	.onePlayer{
+		padding: 10px 15px;
+		overflow: hidden;
+		display: table;
+		width: 100%;
+		height:85px;
+		background-color: rgba(255,255,255, .6);
+		margin-bottom: 10px;
+		&:last-child{
+			border-bottom: none;
+		}
+		.img{
+			padding: 0px 10px 0 0;
+			width: 55px;
+			min-width: 55px;
+			display: table-cell;
+		  	vertical-align: middle;
+		  	img{
+				width: 100%;
+				max-height: 60px;
+			}
+		}
+		.info{
+			display: table-cell;
+			vertical-align: middle;
+			text-align: left;
+			width: 73%;
+			p{ 
+				margin-bottom: 0px;
+			}
+		}
+		.department{
+			font-size: 12px;
+		}
+	}
+	.playerLikes{
+		display: table-cell;
+	  	vertical-align: middle;
+	  	text-align: center;
+	}
+}	
 #theclub .oneSong{
 	padding: 10px 15px;
 	overflow: hidden;

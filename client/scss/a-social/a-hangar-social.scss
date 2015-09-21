@@ -1,4 +1,4 @@
-/* CSS declarations go here */
+/* Social - main */
 @font-face {
     font-family: opensans-light;
     src: url("/fonts/Open_Sans/OpenSans-Light.ttf") format("truetype");
@@ -24,11 +24,6 @@ html, body{
   height: 100%;
 }
 body { 
-	/*background-image: url(images/sj.jpg); 
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;*/
 	background-color: #fff9f8;
 	font-family: opensans-light;
 }
@@ -59,11 +54,11 @@ header iframe .pluginButtonInline{
 .footer{
 	color: #fff;
 	font-family: opensans-bold;
-}
-.footer .copy{
-	font-size: 14px;
-	font-weight: bold;
-}
-.footer .copy sup{
-	font-size: 8px;
+	.copy{
+		font-size: 14px;
+		font-weight: bold;
+		sup{
+			font-size: 8px;
+		}
+	}
 }

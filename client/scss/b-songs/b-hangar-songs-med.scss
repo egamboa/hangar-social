@@ -1,3 +1,5 @@
+/* Songs - md */
+
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
 	#hangar-logo {
 	  margin-left: 0;
@@ -7,6 +9,9 @@
 	}
 }
 @media only screen and (max-width: 991px) {
+	#oclock { 
+		background-image: url(images/sj-mob.jpg);
+	}
 	.navbar-nav .open .dropdown-menu {
 	  position: static;
 	  float: none;

@@ -81,6 +81,5 @@ Template.happyBsNav.events({
 	"click li": function (event) {
 		$('li.active').attr('class', '')
 		event.currentTarget.className = "active";
-		
 	}
 });
