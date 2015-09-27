@@ -3,23 +3,16 @@ Template.cocinando.rendered = function () {
     .fancybox({
         padding : 50,
         margin: 50,
-        preload: 2,
         tpl: {
 	    	closeBtn: '<a title="Close" class="fancybox-item fancybox-close fancyClose" href="javascript:;"></a>'
 		},
 		helpers:  {
 	        title:  null
-	    },
-	    afterClose: function(){
-	    	$.fn.fullpage.setAllowScrolling(true);
-	    	$.fn.fullpage.setKeyboardScrolling(true);
 	    }
     });
 
     $(".fancybox").click(function(event) {
     	event.preventDefault();
-    	$.fn.fullpage.setAllowScrolling(false);
-    	$.fn.fullpage.setKeyboardScrolling(false);
     });
 };
 
