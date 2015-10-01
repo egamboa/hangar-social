@@ -1,11 +1,13 @@
 <template name="cocinando">
 	<div id="fullpage" class="cocinando">
-	    <div class="section fp-auto-height">
+	    <div class="section">
 	    	<header class="container">
 				<div class="text-center">
 					<div class="header-buffer">
-						<img class="img-responsive center-block" src="images/tradiciones/tradiciones.svg" alt="Tradiciones. Sabores, colores y olores costarricenses">
-						<h1>Make your own Costa Rican meal! <br> Options below. {{resize}}</h1>
+						<div class="vertical">
+							<img class="img-responsive center-block" src="images/tradiciones/tradiciones.svg" alt="Tradiciones. Sabores, colores y olores costarricenses">
+							<h1>Make your own Costa Rican meal! <br> Options below. {{resize}}</h1>
+						</div>
 					</div>
 				</div>
 			</header>
@@ -14,15 +16,7 @@
 	    	<div class="container">
 				<div class="recipes">
 					{{#each recepies}}
-						{{#if isFirst this.order }}
-						
-						{{/if}}
-						
 						{{> recipe}}
-
-						{{#if isLast this.order }}
-						{{/if}}
-
 					{{/each}}
 				</div>
 			</div>
