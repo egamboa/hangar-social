@@ -18,4 +18,3 @@ Template.body.helpers({
 		return Router.current().route.getName();
 	}
 });
-

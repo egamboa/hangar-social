@@ -5,7 +5,7 @@
 				<div class="text-center">
 					<div class="header-buffer">
 						<img class="img-responsive center-block" src="images/tradiciones/tradiciones.svg" alt="Tradiciones. Sabores, colores y olores costarricenses">
-						<h1>Make your own Costa Rican meal! <br> Options below.</h1>
+						<h1>Make your own Costa Rican meal! <br> Options below. {{resize}}</h1>
 					</div>
 				</div>
 			</header>
@@ -13,22 +13,12 @@
 	    <div class="section">
 	    	<div class="container">
 				<div class="recipes">
-					{{#each recepies_p1}}
+					{{#each recepies}}
 						{{> recepie}}
 					{{/each}}
 				</div>
 			</div>
-	    </div>
-	    <div class="section">
-	    	<div class="container">
-				<div class="recipes">
-					{{#each recepies_p2}}
-						{{> recepie}}
-					{{/each}}	
-				</div>
-			</div>
-	    </div>
-	    
+	    </div>	    
 	</div>
 	<div id="downArrow" class="pulse2">
 		
