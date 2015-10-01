@@ -12,15 +12,18 @@ body{
         }
 
         .header-buffer{
+            position: relative;
+            height: 100vh;
             h1{
                 color: #fff;
                 font-family: din-regular;
                 font-size: 16px;
+                margin-top: 10% ;
             }
             img{
-                width: 50%;
-                padding-top: 60px;
-                margin-bottom: 50px;
+                width: 90%;
+                padding-top: 10% ;
+                margin-bottom: 10%;
             } 
 
         }
@@ -99,36 +102,36 @@ body{
 
 
        .separator{
-            height: 2px;
-            width: auto;
-            background-color: #888;
-            position: relative;
-            margin-top: 5px;
-        }
-
-        .fancyClose {
-            height: 50px;
-            width: 50px;
-            background: #fafafa;
-            margin-right: 18px;
-            margin-top: 18px;
-            background-image: url('https://cdn4.iconfinder.com/data/icons/geomicons/32/672366-x-128.png');
-            background-size: 15px;
-            background-position: center;
-            background-repeat: no-repeat;
-            border-radius: 50px;
-        }
-
-        #downArrow{
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 30px 25px 0 25px;
-            border-color: #fff transparent transparent transparent;
-            position: fixed;
-            bottom: 5%;
-            left: 5%;
-            opacity: .6;
-        }
+        height: 2px;
+        width: auto;
+        background-color: #888;
+        position: relative;
+        margin-top: 5px;
     }
+
+    .fancyClose {
+        height: 50px;
+        width: 50px;
+        background: #fafafa;
+        margin-right: 18px;
+        margin-top: 18px;
+        background-image: url('https://cdn4.iconfinder.com/data/icons/geomicons/32/672366-x-128.png');
+        background-size: 15px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+    }
+
+    #downArrow{
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 30px 25px 0 25px;
+        border-color: #fff transparent transparent transparent;
+        position: fixed;
+        bottom: 5%;
+        left: 5%;
+        opacity: .6;
+    }
+}
 }
