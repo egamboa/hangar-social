@@ -35,6 +35,12 @@ Template.cocinando.helpers({
 		
 		return Session.get('resize');
 	},
+	isFirst: function(order){
+		return order == 1 || order == 4 || order == 7 || order == 10;
+	},
+	isLast: function(order){
+		return order == 3 || order == 6 || order == 9 || order == 12;
+	},
 	recepies: function () {
 		return [
 			{
