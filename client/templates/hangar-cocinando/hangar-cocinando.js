@@ -27,7 +27,7 @@ Meteor.startup(function () {
 
 Template.cocinando.helpers({
 	resize: function() {
-		if($(window).width() > 768){
+		if($(window).width() > 419){
 			$('.recipes .recipe').height($('.recipe').first().width());
 		}else{
 			$('.recipes .recipe').height('auto');
@@ -35,13 +35,7 @@ Template.cocinando.helpers({
 		
 		return Session.get('resize');
 	},
-	isFirst: function(order){
-		return order == 1 || order == 4 || order == 7 || order == 10;
-	},
-	isLast: function(order){
-		return order == 3 || order == 6 || order == 9 || order == 12;
-	},
-	recepies: function () {
+	recipes_col1: function () {
 		return [
 			{
 				'thumbnail': 'images/tradiciones/icons/gallo-pinto.svg',
@@ -50,21 +44,11 @@ Template.cocinando.helpers({
 				'subtitle': '(ga-joe peen-toh)',
 				'type': 'Main Dish',
 				'color': '68bc68',
-				'order': 1,
 				'extra': {
-					'position': 'down',
+					'position': false,
 					'image': '/',
-					'color': 'fork'
+					'color': 'tenedor'
 				}
-			},
-			{
-				'thumbnail': 'images/tradiciones/icons/sopa-negra.svg',
-				'recepie_img': 'images/tradiciones/popups/sopa-negra.png',
-				'name': 'Sopa Negra',
-				'subtitle': '(sou-pah neh-grah)',
-				'type': 'Main Dish',
-				'color': '8dd3cb',
-				'order': 2
 			},
 			{
 				'thumbnail': 'images/tradiciones/icons/chifrijo.svg',
@@ -72,9 +56,20 @@ Template.cocinando.helpers({
 				'name': 'Chrifrijo',
 				'subtitle': '(chee-free-ho)',
 				'type': 'Main Dish',
-				'color': '53a751',
-				'order': 3
+				'color': '53a751'
 			},
+			{
+				'thumbnail': 'images/tradiciones/icons/sopa-negra.svg',
+				'recepie_img': 'images/tradiciones/popups/sopa-negra.png',
+				'name': 'Sopa Negra',
+				'subtitle': '(sou-pah neh-grah)',
+				'type': 'Main Dish',
+				'color': '8dd3cb'
+			}
+		]
+	},
+	recipes_col2: function () {
+		return [
 			{
 				'thumbnail': 'images/tradiciones/icons/tortillas.svg',
 				'recepie_img': 'images/tradiciones/popups/tortillas.png',
@@ -82,12 +77,18 @@ Template.cocinando.helpers({
 				'subtitle': '(tor-tee-yas)',
 				'type': 'Side Dish',
 				'color': 'ede4ca',
-				'order': 4,
 				'extra': {
-					'position': 'up',
-					'image': '/',
-					'color': 'bottle'
+					'position': true,
+					'color': 'cuchara'
 				}
+			},
+			{
+				'thumbnail': 'images/tradiciones/icons/mango.svg',
+				'recepie_img': 'images/tradiciones/popups/mango-ceviche.png',
+				'name': 'Mango ceviche',
+				'subtitle': '(man-go seh-vee-cheh)',
+				'type': 'Side Dish',
+				'color': 'f2c000'
 			},
 			{
 				'thumbnail': 'images/tradiciones/icons/picadillo.svg',
@@ -95,17 +96,19 @@ Template.cocinando.helpers({
 				'name': 'Plantain picadillo',
 				'subtitle': '(pee-cah-dee-joe)',
 				'type': 'Side Dish',
-				'color': 'fdf6dc',
-				'order': 5
-			},			
+				'color': 'fdf6dc'
+			}
+		]
+	},
+	recipes_col3: function () {
+		return [
 			{
-				'thumbnail': 'images/tradiciones/icons/mango.svg',
-				'recepie_img': 'images/tradiciones/popups/mango-ceviche.png',
-				'name': 'Mango ceviche',
-				'subtitle': '(man-go seh-vee-cheh)',
-				'type': 'Side Dish',
-				'color': 'f2c000',
-				'order': 6
+				'thumbnail': 'images/tradiciones/icons/agua-dulce.svg',
+				'recepie_img': 'images/tradiciones/popups/agua-dulce.png',
+				'name': 'Agua Dulce',
+				'subtitle': '(ah-goo-ah dool-seh)',
+				'type': 'Beverage',
+				'color': 'f2c000'
 			},
 			{
 				'thumbnail': 'images/tradiciones/icons/horchata.svg',
@@ -114,21 +117,10 @@ Template.cocinando.helpers({
 				'subtitle': '(or-chat-ah)',
 				'type': 'Beverage',
 				'color': '8dd3cb',
-				'order': 7,
 				'extra': {
-					'position': 'down',
-					'image': '/',
-					'color': 'fork'
+					'position': false,
+					'color': 'salsa'
 				}
-			},
-			{
-				'thumbnail': 'images/tradiciones/icons/agua-dulce.svg',
-				'recepie_img': 'images/tradiciones/popups/agua-dulce.png',
-				'name': 'Agua Dulce',
-				'subtitle': '(ah-goo-ah dool-seh)',
-				'type': 'Beverage',
-				'color': 'f2c000',
-				'order': 8
 			},
 			{
 				'thumbnail': 'images/tradiciones/icons/agua-de-sapo.svg',
@@ -136,9 +128,12 @@ Template.cocinando.helpers({
 				'name': 'Agua de sapo',
 				'subtitle': '(ah-goo-ah de sa-poh)',
 				'type': 'Beverage',
-				'color': '8dd3cb',
-				'order': 9
-			},
+				'color': '8dd3cb'
+			}
+		]
+	},
+	recipes_col4: function(){
+		return [
 			{
 				'thumbnail': 'images/tradiciones/icons/platanos-dulces.svg',
 				'recepie_img': 'images/tradiciones/popups/platano-dulce.png',
@@ -146,11 +141,9 @@ Template.cocinando.helpers({
 				'subtitle': '(plah-tah-no dool-seh)',
 				'type': 'Dessert',
 				'color': 'ede4ca',
-				'order': 10,
 				'extra': {
-					'position': 'down',
-					'image': '/',
-					'color': 'candy'
+					'position': false,
+					'color': 'confites'
 				}
 			},
 			{
@@ -159,8 +152,7 @@ Template.cocinando.helpers({
 				'name': 'Cocadas',
 				'subtitle': '(coke-ah-das)',
 				'type': 'Dessert',
-				'color': '68bc68',
-				'order': 11
+				'color': '68bc68'
 			},
 			{
 				'thumbnail': 'images/tradiciones/icons/pan-elote.svg',
@@ -168,9 +160,9 @@ Template.cocinando.helpers({
 				'name': 'Pan de elote',
 				'subtitle': '(pan de el-oh-teh)',
 				'type': 'Dessert',
-				'color': '53a751',
-				'order': 12
+				'color': '53a751'
 			}
 		]
 	}
+
 });
