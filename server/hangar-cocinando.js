@@ -115,20 +115,7 @@ var recipes =[
 ];
 
 Meteor.methods({
-	getAll: function(){
+	getAllRecipes: function(){
 		return recipes;
-	},
-	getDesserts: function(){
-		return _.filter(recipes, function(recipe){ return recipe.type == "Dessert"; });
-	},
-	getSideDish: function(){
-		return _.filter(recipes, function(recipe){ return recipe.type == "Side Dish"; });
-	},
-	getBeverage: function(){
-		return _.filter(recipes, function(recipe){ return recipe.type == "Beverage"; });
-	},
-	getMainDish: function(){
-		return _.filter(recipes, function(recipe){ return recipe.type == "Main Dish"; });
 	}
-
 });

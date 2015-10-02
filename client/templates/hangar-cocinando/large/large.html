@@ -17,24 +17,24 @@
 				<div class="recipes">
 					<div class="row">
 						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-							{{#each recipes_col1}}
+							{{#each mainDishes}}
 								{{> recipe}}
 							{{/each}}
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-						{{#each recipes_col2}}
-							{{> recipe}}
-						{{/each}}
+							{{#each sideDishes}}
+								{{> recipe}}
+							{{/each}}
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-						{{#each recipes_col3}}
-							{{> recipe}}
-						{{/each}}
+							{{#each beverages}}
+								{{> recipe}}
+							{{/each}}
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-						{{#each recipes_col4}}
-							{{> recipe}}
-						{{/each}}
+							{{#each desserts}}
+								{{> recipe}}
+							{{/each}}
 						</div>
 					</div>
 				</div>
