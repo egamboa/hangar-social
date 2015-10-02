@@ -1,0 +1,25 @@
+<template name="cookLarge">
+	<div id="fullpage" class="cocinando">
+	    <div class="section">
+	    	<header class="container">
+				<div class="text-center">
+					<div class="header-buffer">
+						<div class="vertical">
+							<img class="img-responsive center-block" src="images/tradiciones/tradiciones.svg" alt="Tradiciones. Sabores, colores y olores costarricenses">
+							<h1>Make your own Costa Rican meal! <br> Options below. {{resize}} {{isMobile}} </h1>
+						</div>
+					</div>
+				</div>
+			</header>
+	    </div>
+	    <div class="section">
+	    	<div class="container">
+				<div class="recipes">
+					{{#each recepies}}
+						{{> recipe}}
+					{{/each}}
+				</div>
+			</div>
+	    </div>	    
+	</div>
+</template>
