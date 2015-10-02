@@ -19,13 +19,24 @@ Template.cocinando.rendered = function () {
 };
 
 Session.set("resize", null); 
+Session.set("wSize", $(window).width());
+
 Meteor.startup(function () {
-  window.addEventListener('resize', function(){
-    Session.set("resize", new Date());
-  });
+  	window.addEventListener('resize', function(){
+    	Session.set("resize", new Date());
+    	Session.set("wSize", $(window).width());
+  	});
 });
 
 Template.cocinando.helpers({
+	isMobile: function () {
+		if (Session.get("wSize") < 600) {
+			return true;
+		}else{
+			return false;
+		}
+	},
+
 	resize: function() {
 		if($(window).width() > 768){
 			$('.recipes .recipe').height($('.recipe').first().width());
