@@ -1,2 +1,4 @@
 .meteor/local
 .meteor/meteorite
+
+client/templates/hangar-cocinando/hangar-cocinando.html
