@@ -1,6 +1,81 @@
 <template name="cookSmall">
-	<h1>WELCOME TO THE SMALL DOMAIN!</h1>
-	<div class="topContent"></div>
+	<style type="text/css">
+	.footer {
+    	background-color: #000;
+    	padding-top: 30px;
+    	padding-bottom: 30px;
+    	height: 80px;
+	}
+	.topContent{
+		height: 100vh;
+	}
+	.salsa{
+		background: #f2c000;
+		margin: 1% 1% 0 1%;
+		height: 20%;
+	}
+	.tenedor{
+		background: #fdf6dc;
+		margin: 0 1% 0 1%;
+		height: 20%;
+	}
+	.tradiciones{
+		background: #8dd3cb;
+		margin: 0 1% 0 1%;
+		height: 20%;
+	}
+	.tradicionesTexto{
+		color: black;
+		font-weight: bold;
+	}
+	.cuchara{
+		background: #ede4ca;
+		margin: 0 1% 0 1%;
+		height: 20%;
+	}
+	.confites{
+		background: #4fa84c;
+		margin: 0 1% 0 1%;
+		height: 20%;
+	}
+	.row img , h2 {
+		margin: 10% auto 10% auto;
+	}
+	</style>
+	<div class="topContent">
+		<div class="row salsa">
+			<img class="img-responsive center-block" src="/images/tradiciones/icons/salsa.svg">
+		</div>
+		<div class="row tenedor">
+			<img class="img-responsive center-block" src="/images/tradiciones/icons/tenedor.svg">
+		</div>
+		<div class="row tradiciones">
+			<h2 class="tradicionesTexto">TRADICIONES</h2>
+		</div>
+		<div class="row cuchara">
+			<img class="img-responsive center-block" src="/images/tradiciones/icons/cuchara.svg">
+		</div>
+		<div class="row confites">
+			<img class="img-responsive center-block" src="/images/tradiciones/icons/confites.svg">
+		</div>
+	</div>
 	<div class="slider"></div>
-	<div class="recipeDetails"></div>
+	<div class="recipeDetails">
+	
+
+		<p class="container-fluid">
+			Commonly known as Pinto, Gallo
+			Pinto is Costa Rica's signature
+			dish. This delicious combo oof rice 
+			and beans is eaten for lunch, breafast or
+			dinner in households all over the country
+		</p>
+
+
+	<footer class="footer">
+        <div class="container">
+            <img class="img-responsive center-block" src="/images/favicon.ico">
+        </div>
+    </footer>
+	</div>
 </template>
