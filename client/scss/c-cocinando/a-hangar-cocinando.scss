@@ -53,10 +53,7 @@ body{
 
             &:hover{
                 .after{
-                    -webkit-transition: opacity 1s; /* Safari */
-                    
                     opacity : 1;
-                    transition: opacity 1s;
                 }
                 .actual{
                     opacity: 0;
@@ -64,6 +61,8 @@ body{
             }
 
             .actual{
+                -webkit-transition: opacity .6s; /* Safari */
+                transition: opacity .6s;
                 top:0;
                 text-align: center;
                 display: table;
@@ -102,7 +101,7 @@ body{
                     }
 
                     span{
-                        color: #888;
+                        color: #333;
                         font-family: din-regular;
                         font-size: 16px;
                     }
@@ -147,36 +146,40 @@ body{
 
 
        .separator{
-        height: 2px;
-        width: auto;
-        background-color: #888;
-        position: relative;
-        margin-top: 5px;
-    }
+            height: 2px;
+            width: auto;
+            background-color: #888;
+            position: relative;
+            margin-top: 5px;
+        }
 
-    .fancyClose {
-        height: 50px;
-        width: 50px;
-        background: #fafafa;
-        margin-right: 18px;
-        margin-top: 18px;
-        background-image: url('https://cdn4.iconfinder.com/data/icons/geomicons/32/672366-x-128.png');
-        background-size: 15px;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 50px;
-    }
+        .fancyClose {
+            height: 50px;
+            width: 50px;
+            background: #fafafa;
+            margin-right: 18px;
+            margin-top: 18px;
+            background-image: url('https://cdn4.iconfinder.com/data/icons/geomicons/32/672366-x-128.png');
+            background-size: 15px;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 50px;
+        }
 
-    #downArrow{
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 30px 25px 0 25px;
-        border-color: #fff transparent transparent transparent;
-        position: fixed;
-        bottom: 5%;
-        left: 5%;
-        opacity: .6;
+        #downArrow{
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 30px 25px 0 25px;
+            border-color: #fff transparent transparent transparent;
+            position: fixed;
+            bottom: 5%;
+            left: 5%;
+            opacity: .6;
+        }
     }
-}
+    #currentRecipe{
+        height: 100vh;
+        background-color: #f3f6db;
+    }
 }
