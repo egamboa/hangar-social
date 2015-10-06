@@ -1,10 +1,11 @@
 Template['cookSmall'].__helpers = Template['cocinando'].__helpers;
 
 Template.cookSmall.rendered = function () {
-	$('#recipesSlide').slick({
-		mobileFirst: true,
-		arrows: false
-	});
+	setTimeout(function(){
+		$('#recipesSlide').fadeIn(400).slick({
+			arrows: false
+		});
+	}, 300);
 };
 
 Template.cookSmall.events({
