@@ -75,17 +75,25 @@
 			</div>
 		</div>
 		</div>	
-		<div class="recipe">
-			<h2>Make your own Costa Rican meal!</h2>
-			<div id="recipesSlide" >
-				
-				<div class="item">
-					<div class="text-center">
-						<img src="images/tradiciones/icons/gallo-pinto.svg">
-						<h3>Gallo Pinto</h3>
-						<h4>Rice and Beans</h4>
-						<a class="btn btn-default" href="#">See Recipe</a>
+		<div id="cookSmall">
+			<div class="recipe">
+				<h2>Make your own Costa Rican meal!</h2>
+				<div id="carousel-recipes" class="carousel slide" data-ride="carousel" data-interval="false">
+					<div class="carousel-inner" role="listbox">
+						<div id="recipesSlide" >
+							{{#each allRecipes}}
+								<div class="item">
+									<div class="text-center">
+										<img src="{{thumbnail}}" style="background-color:#{{color}}" />
+										<h3>{{name}}</h3>
+										<h4>{{subtitle}}</h4>
+										<a class="btn btn-default" href="#">See Recipe</a>
+									</div>
+								</div>
+							{{/each}}
+						</div>
 					</div>
+<<<<<<< HEAD
 				</div>
 				<div class="item">
 					<div class="text-center">
@@ -106,6 +114,9 @@
 					</div>
 				</div>
 				
+=======
+				</div> 
+>>>>>>> origin/master
 			</div>
 		</div>
 </template>

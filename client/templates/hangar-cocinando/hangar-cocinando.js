@@ -18,9 +18,8 @@ Template.cocinando.helpers({
 	isMobile: function () {
 		if (Session.get("wSize") < 600) {
 			return true;
-		}else{
-			return false;
 		}
+		return false;
 	},
 
 	resize: function() {

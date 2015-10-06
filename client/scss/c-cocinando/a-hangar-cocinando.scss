@@ -107,15 +107,26 @@ body{
                 }
 
                 .type{
-                 position: absolute;
-                 bottom: 37px;
-                 color: #f04e37;
-                 width: 100%;
-                 left: 0px; 
-             }
-
-         }
-     }
+                    position: absolute;
+                    bottom: 37px;
+                    color: #f04e37;
+                    width: 100%;
+                    left: 0px; 
+                }
+                .btn-default {
+                    background-color: #68bc68;
+                    color: #fff;
+                    height: 50px;
+                    font-family: din-regular;
+                    font-size: 20px;
+                    font-size: 4.5vw;
+                    text-transform: uppercase;
+                    border-radius: 30px;
+                    margin-top: 5%;
+                    padding-top: 2vh;
+                }
+            }
+        }
 
      .extra{
         height: 114px;
@@ -181,11 +192,6 @@ body{
 #cookSmall {
     height: 100%; 
     width: 100%;
-
-    .intro {
-        background-color: green;
-        display: none;
-    }
     .recipe {
         background-color: #ede4ca;
         height: 100vh;
@@ -193,10 +199,10 @@ body{
         h2 {
             background-color: #8dd3cb;
             color: #000;
-            font-size: 25px;
+            font-size: 6vw;
             margin: 0;
-            padding-top: 20px;
-            height: 64px;
+            padding-top: 5%;
+            height: 8vh;
             border-bottom: 2px solid #000;
             font-family: din-regular;
         }
@@ -206,7 +212,6 @@ body{
         }
 
         img {
-            background-color: #68bc68;
             height: 75vw;
             width: 90%;
             padding: 5% 10% 0;
@@ -243,84 +248,92 @@ body{
             margin-top: 5%;
             padding-top: 2vh;
         }
-
-        .carousel-control.left  {
-            background-image: none;
-        }
-
-        .carousel-control.right  {
-            background-image: none;
-        }
         .glyphicon {
             font-size: 40px;
-        }
-
-        .carousel-control {
-            color: #8dd3cb;
         }
     }
     .detail {
         display: none;
     }
 }
-#currentRecipe{
-    height: 100vh;
-    background-color: #FDF6DC;
-    overflow-y: scroll;
-    .recipe-content{
-        padding: 10% 25% 0;
-        h1{
-            font-family: din-bold;
-            font-style: normal;
-            font-size: 30px;
-            color: #314040;
-            margin-bottom: 30px;
-            span{
-                font-family: din-regular;
-                font-size: 25px;
+    #currentRecipe{
+        position: fixed;
+        z-index: 100;
+        top: 100%;
+        width: 100%;
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        &.open{
+            top: 0%;
+        }
+
+        .recipe-holder{
+            height: 100vh;
+            background-color: #FDF6DC;
+            overflow-y: scroll;
+            .recipe-content{
+                padding: 10% 25% 5%;
+                h1{
+                    font-family: din-bold;
+                    font-style: normal;
+                    font-size: 30px;
+                    color: #314040;
+                    margin-bottom: 30px;
+                    span{
+                        font-family: din-regular;
+                        font-size: 25px;
+                    }
+                }
+                h2{
+                    font-family: din-bold;
+                    font-size: 18px;
+                    font-style: normal;
+                    color: #68bc68;
+                    text-align: left;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+                p, li{
+                    font-family: din-regular;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: #666;
+                    font-style: normal;
+                }
+                span.separator{
+                    display: block;
+                    width: 100%;
+                    border-bottom: 2px solid #8dd3cb;
+                    margin: 20px 0;
+                }
+                .recipe-info{
+                    font-family: din-regular;
+                    font-size: 16px;
+                    
+                    span{
+                        color: #68bc68;
+                        font-family: din-bold;
+                        text-transform: uppercase;
+                    }
+                }
+                ul, li{
+                    list-style: none;
+                    padding: 0px;
+                }
+                .recipe-close{
+                    float: right;
+                    margin-top: 5px;
+                    display: inline-block;
+                }
             }
-        }
-        h2{
-            font-family: din-bold;
-            font-size: 18px;
-            font-style: normal;
-            color: #68bc68;
-            text-align: left;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        p, li{
-            font-family: din-regular;
-            font-size: 16px;
-            line-height: 25px;
-            color: #666;
-            font-style: normal;
-        }
-        span.separator{
-            display: block;
-            width: 100%;
-            border-bottom: 2px solid #8dd3cb;
-            margin: 20px 0;
-        }
-        .recipe-info{
-            font-family: din-regular;
-            font-size: 16px;
-            
-            span{
-                color: #68bc68;
-                font-family: din-bold;
-                text-transform: uppercase;
-            }
-        }
-        ul, li{
-            list-style: none;
-            padding: 0px;
-        }
-        .recipe-close{
-            float: right;
-            margin-top: 5px;
-            display: inline-block;
         }
     }
-}
 }
