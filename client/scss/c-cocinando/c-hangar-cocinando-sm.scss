@@ -1,3 +1,41 @@
 @media only screen and (max-width: 599px) {
+	 .topContent {
+ 		height: 100vh;
+ 		.rowPanel{
+			height: 20%;
+			display: table;
+			width: 100%;
+			margin: 0;
+		}
+			.salsa{
+				@extend .rowPanel;
+				background: #f2c000;
+			}
+			.tenedor{
+				@extend .rowPanel;
+				background: #fdf6dc;
+			}
+			.tradiciones{
+				@extend .rowPanel;
+			background: #8dd3cb;
+			}
+			.tradicionesTexto{
+				color: black;
+				font-family: din-bold;
+			}
+			.cuchara{
+				@extend .rowPanel;
+				background: #ede4ca;
+			}		
+			.confites{
+				@extend .rowPanel;
+				background: #4fa84c;
+			}
 
+		.vertical{
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+		}
+  }
 }
