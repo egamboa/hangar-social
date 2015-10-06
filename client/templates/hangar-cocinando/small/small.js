@@ -1,5 +1,6 @@
 Template.cookSmall.rendered = function () {
-	$("#carousel-recipes").carousel({
-		swipe: 100
+	$('#recipesSlide').slick({
+		mobileFirst: true,
+		arrows: false
 	});
 };
