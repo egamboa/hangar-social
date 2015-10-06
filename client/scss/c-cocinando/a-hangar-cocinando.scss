@@ -89,7 +89,7 @@ body{
                     font-family: din-bold;
                     opacity: 1;
                     vertical-align: middle;
-                    a{
+                    span.title{
                         color: #000;
                         text-decoration: none;
                         border-bottom: 2px solid #fff;
@@ -99,7 +99,7 @@ body{
                         font-family: din-bold;
                     }
 
-                    span{
+                    span.subtitle{
                         color: #333;
                         font-family: din-regular;
                         font-size: 16px;

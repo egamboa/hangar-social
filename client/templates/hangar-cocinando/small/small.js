@@ -1,0 +1,1 @@
+Template['cookSmall'].__helpers = Template['cocinando'].__helpers;
