@@ -7,7 +7,6 @@ var recipes =[
 	'color': '68bc68',
 	'extra': {
 		'position': false,
-		'image': '/',
 		'color': 'tenedor'
 	}
 },
