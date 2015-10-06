@@ -14,8 +14,6 @@ Template.cocinando.rendered = function () {
 	$(".fancybox").click(function(event) {
 		event.preventDefault();
 	});
-
-	$('.recipes .recipe').height($('.recipe').first().width());
 };
 
 Session.set("resize", null); 

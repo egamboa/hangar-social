@@ -1,4 +1,5 @@
 <template name="cookSmall">
+
 	<style type="text/css">
 	.footer {
     	background-color: #000;
@@ -32,7 +33,7 @@
 	}
 	.tradicionesTexto{
 		color: black;
-		font-weight: bold;
+		font-family: din-bold;
 	}
 	.cuchara{
 		background: #ede4ca;
@@ -83,14 +84,42 @@
 				<img class="img-responsive center-block" src="/images/tradiciones/icons/confites.svg">
 			</div>
 		</div>
-	</div>
-	<div class="slider"></div>
-	<div class="recipeDetails">
-
-	<footer class="footer">
-        <div class="container">
-            <img class="img-responsive center-block" src="/images/favicon.ico">
-        </div>
-    </footer>
-	</div>
+		</div>	
+		<div class="recipe">
+			<h2>Make your own Costa Rican meal!</h2>
+			<div id="carousel-recipes" class="carousel slide" data-ride="carousel" data-interval="false">
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<div class="text-center">
+							<img src="images/tradiciones/icons/gallo-pinto.svg">
+							<h3>Gallo Pinto</h3>
+							<h4>Rice and Beans</h4>
+							<a class="btn btn-default" href="#">See Recipe</a>
+						</div>
+						
+					</div>
+					<div class="item">
+						<div class="text-center">
+							<img src="images/tradiciones/icons/gallo-pinto.svg">
+							<h3>No es Gallo pinto</h3>
+							<h4>algo que no es Rice and Beans</h4>
+							<a class="btn btn-default" href="#">See Recipe</a>
+						</div>
+					</div>
+				</div>
+				<a class="left carousel-control" href="#carousel-recipes" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				 <a class="right carousel-control" href="#carousel-recipes" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>   <!-- 
+		<footer class="footer">
+	    <div class="container">
+	            <img class="img-responsive center-block" src="/images/favicon.ico">
+	        </div>
+	    </footer>-->
 </template>
