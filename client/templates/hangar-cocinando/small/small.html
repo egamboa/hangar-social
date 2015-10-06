@@ -1,52 +1,52 @@
 <template name="cookSmall">
 	<style type="text/css">
-		.topContent{
-			height: 100vh;
-		}
-		.salsa{
-			background: #f2c000;
-			height: 20%;
-	 		display: table;
-	 		width: 100%;
-	 		margin: 0;
-		}
-		.tenedor{
-			background: #fdf6dc;
-			height: 20%;
-	 		display: table;
-	 		width: 100%;
-	 		margin: 0;
-		}
-		.tradiciones{
-			background: #8dd3cb;
-			height: 20%;
-	 		display: table;
-	 		width: 100%;
-	 		margin: 0;
-		}
-		.tradicionesTexto{
-			color: black;
-			font-family: din-bold;
-		}
-		.cuchara{
-			background: #ede4ca;
-			height: 20%;
-	 		display: table;
-	 		width: 100%;
-	 		margin: 0;
-		}
-		.confites{
-			background: #4fa84c;
-			height: 20%;
-	 		display: table;
-	 		width: 100%;
-	 		margin: 0;
-		}
-		.vertical{
-			display: table-cell;
-	 		text-align: center;
-	 		vertical-align: middle;
-		}
+	.topContent{
+		height: 100vh;
+	}
+	.salsa{
+		background: #f2c000;
+		height: 20%;
+		display: table;
+		width: 100%;
+		margin: 0;
+	}
+	.tenedor{
+		background: #fdf6dc;
+		height: 20%;
+		display: table;
+		width: 100%;
+		margin: 0;
+	}
+	.tradiciones{
+		background: #8dd3cb;
+		height: 20%;
+		display: table;
+		width: 100%;
+		margin: 0;
+	}
+	.tradicionesTexto{
+		color: black;
+		font-family: din-bold;
+	}
+	.cuchara{
+		background: #ede4ca;
+		height: 20%;
+		display: table;
+		width: 100%;
+		margin: 0;
+	}
+	.confites{
+		background: #4fa84c;
+		height: 20%;
+		display: table;
+		width: 100%;
+		margin: 0;
+	}
+	.vertical{
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+	}
 	</style>
 	<div class="topContent">
 		<div class="row salsa">
@@ -74,49 +74,23 @@
 				<img class="img-responsive center-block" src="/images/tradiciones/icons/confites.svg">
 			</div>
 		</div>
-		</div>	
-		<div id="cookSmall">
-			<div class="recipe">
-				<h2>Make your own Costa Rican meal!</h2>
-				<div id="carousel-recipes" class="carousel slide" data-ride="carousel" data-interval="false">
-					<div class="carousel-inner" role="listbox">
-						<div id="recipesSlide" >
-							{{#each allRecipes}}
-								<div class="item">
-									<div class="text-center">
-										<img src="{{thumbnail}}" style="background-color:#{{color}}" />
-										<h3>{{name}}</h3>
-										<h4>{{subtitle}}</h4>
-										<a class="btn btn-default" href="#">See Recipe</a>
-									</div>
-								</div>
-							{{/each}}
-						</div>
-					</div>
-<<<<<<< HEAD
-				</div>
+	</div>	
+	<div id="cookSmall">
+		<div class="recipe">
+			<h2>Make your own Costa Rican meal!</h2>
+			
+			<div id="recipesSlide" >
+				{{#each allRecipes}}
 				<div class="item">
 					<div class="text-center">
-						<img src="images/tradiciones/icons/gallo-pinto.svg">
-						<h3>No es Gallo pinto</h3>
-						<h4>algo que no es Rice and Beans</h4>
+						<img src="{{thumbnail}}" style="background-color:#{{color}}" />
+						<h3>{{name}}</h3>
+						<h4>{{subtitle}}</h4>
 						<a class="btn btn-default" href="#">See Recipe</a>
 					</div>
-					<div class="recipeDetails">
-						<p class="container-fluid">
-							Commonly known as Pinto, Gallo
-							Pinto is Costa Rica's signature
-							dish. This delicious combo oof rice 
-							and beans is eaten for lunch, breafast or
-							dinner in households all over the country
-						</p>
-
-					</div>
 				</div>
-				
-=======
-				</div> 
->>>>>>> origin/master
+				{{/each}}
 			</div>
 		</div>
+	</div>
 </template>
