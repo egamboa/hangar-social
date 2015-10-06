@@ -107,134 +107,220 @@ body{
                 }
 
                 .type{
-                   position: absolute;
-                   bottom: 37px;
-                   color: #f04e37;
-                   width: 100%;
-                   left: 0px; 
-               }
+                 position: absolute;
+                 bottom: 37px;
+                 color: #f04e37;
+                 width: 100%;
+                 left: 0px; 
+             }
 
-           }
-       }
+         }
+     }
 
-       .extra{
-            height: 114px;
-            display: table;
-            width: 100.5%;
-            .vertical{
-                display: table-cell;
-                text-align: center;
-                vertical-align: middle;
-                img{
-                    
-                }
-            }
-            &.tenedor{
-                background-color: #fdf6dc;
-            }
-            &.cuchara{
-                background-color: #8dd3cb;
-            }
-            &.confites{
-                background-color: #f2c000;
-            }
-            &.salsa{
-                background-color: #ede4ca;
-            }
-       }
-
-
-       .separator{
-            height: 2px;
-            width: auto;
-            background-color: #888;
-            position: relative;
-            margin-top: 5px;
-        }
-
-        .fancyClose {
-            height: 50px;
-            width: 50px;
-            background: #fafafa;
-            margin-right: 18px;
-            margin-top: 18px;
-            background-image: url('https://cdn4.iconfinder.com/data/icons/geomicons/32/672366-x-128.png');
-            background-size: 15px;
-            background-position: center;
-            background-repeat: no-repeat;
-            border-radius: 50px;
-        }
-
-        #downArrow{
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 30px 25px 0 25px;
-            border-color: #fff transparent transparent transparent;
-            position: fixed;
-            bottom: 5%;
-            left: 5%;
-            opacity: .6;
-        }
-    }
-    #currentRecipe{
-        height: 100vh;
-        background-color: #FDF6DC;
-        overflow-y: scroll;
-        .recipe-content{
-            padding: 10% 25% 0;
-            h1{
-                font-family: din-bold;
-                font-style: normal;
-                font-size: 30px;
-                color: #314040;
-                margin-bottom: 30px;
-                span{
-                    font-family: din-regular;
-                    font-size: 25px;
-                }
-            }
-            h2{
-                font-family: din-bold;
-                font-size: 18px;
-                font-style: normal;
-                color: #68bc68;
-                text-align: left;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-            }
-            p, li{
-                font-family: din-regular;
-                font-size: 16px;
-                line-height: 25px;
-                color: #666;
-                font-style: normal;
-            }
-            span.separator{
-                display: block;
-                width: 100%;
-                border-bottom: 2px solid #8dd3cb;
-                margin: 20px 0;
-            }
-            .recipe-info{
-                font-family: din-regular;
-                font-size: 16px;
+     .extra{
+        height: 114px;
+        display: table;
+        width: 100.5%;
+        .vertical{
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            img{
                 
-                span{
-                    color: #68bc68;
-                    font-family: din-bold;
-                    text-transform: uppercase;
-                }
-            }
-            ul, li{
-                list-style: none;
-                padding: 0px;
-            }
-            .recipe-close{
-                float: right;
-                margin-top: 5px;
-                display: inline-block;
             }
         }
+        &.tenedor{
+            background-color: #fdf6dc;
+        }
+        &.cuchara{
+            background-color: #8dd3cb;
+        }
+        &.confites{
+            background-color: #f2c000;
+        }
+        &.salsa{
+            background-color: #ede4ca;
+        }
     }
+
+
+    .separator{
+        height: 2px;
+        width: auto;
+        background-color: #888;
+        position: relative;
+        margin-top: 5px;
+    }
+
+    .fancyClose {
+        height: 50px;
+        width: 50px;
+        background: #fafafa;
+        margin-right: 18px;
+        margin-top: 18px;
+        background-image: url('https://cdn4.iconfinder.com/data/icons/geomicons/32/672366-x-128.png');
+        background-size: 15px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+    }
+
+    #downArrow{
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 30px 25px 0 25px;
+        border-color: #fff transparent transparent transparent;
+        position: fixed;
+        bottom: 5%;
+        left: 5%;
+        opacity: .6;
+    }
+}
+
+#cookSmall {
+    height: 100%; 
+    width: 100%;
+
+    .intro {
+        background-color: green;
+        display: none;
+    }
+    .recipe {
+        background-color: #ede4ca;
+        height: 100vh;
+
+        h2 {
+            background-color: #8dd3cb;
+            color: #000;
+            font-size: 28px;
+            font-size: 6vw;
+            margin: 0;
+            padding-top: 4%;
+            height: 8vh;
+            border-bottom: 2px solid #000;
+        }
+
+        .carousel {
+            height: 60vh;
+        }
+
+        img {
+            background-color: #68bc68;
+            height: 75vw;
+            width: 90%;
+            padding: 5% 10% 0;
+            margin: 0 auto;
+        }
+
+        h3 {
+            color: #000;
+            font-size: 50px;
+            font-size: 10vw;
+            font-family: din-bold;
+            width: 50%;
+            border-bottom: 2px solid #000;
+            margin-left: 25%;
+            margin-top: 5%;
+        }   
+
+        h4 {
+            font-family: din-regular;
+            font-size: 30px;
+            font-size: 5.2vw;
+            margin-top: 5%;
+        }
+
+        .btn-default {
+            background-color: #68bc68;
+            color: #fff;
+            height: 50px;
+            font-family: din-regular;
+            font-size: 20px;
+            font-size: 4.5vw;
+            text-transform: uppercase;
+            border-radius: 30px;
+            margin-top: 5%;
+            padding-top: 2vh;
+        }
+
+        .carousel-control.left  {
+            background-image: none;
+        }
+
+        .carousel-control.right  {
+            background-image: none;
+        }
+        .glyphicon {
+            font-size: 40px;
+        }
+
+        .carousel-control {
+            color: #8dd3cb;
+        }
+    }
+    .detail {
+        display: none;
+    }
+}
+#currentRecipe{
+    height: 100vh;
+    background-color: #FDF6DC;
+    overflow-y: scroll;
+    .recipe-content{
+        padding: 10% 25% 0;
+        h1{
+            font-family: din-bold;
+            font-style: normal;
+            font-size: 30px;
+            color: #314040;
+            margin-bottom: 30px;
+            span{
+                font-family: din-regular;
+                font-size: 25px;
+            }
+        }
+        h2{
+            font-family: din-bold;
+            font-size: 18px;
+            font-style: normal;
+            color: #68bc68;
+            text-align: left;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        p, li{
+            font-family: din-regular;
+            font-size: 16px;
+            line-height: 25px;
+            color: #666;
+            font-style: normal;
+        }
+        span.separator{
+            display: block;
+            width: 100%;
+            border-bottom: 2px solid #8dd3cb;
+            margin: 20px 0;
+        }
+        .recipe-info{
+            font-family: din-regular;
+            font-size: 16px;
+            
+            span{
+                color: #68bc68;
+                font-family: din-bold;
+                text-transform: uppercase;
+            }
+        }
+        ul, li{
+            list-style: none;
+            padding: 0px;
+        }
+        .recipe-close{
+            float: right;
+            margin-top: 5px;
+            display: inline-block;
+        }
+    }
+}
 }
