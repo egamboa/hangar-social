@@ -2,7 +2,6 @@ Template['cookSmall'].__helpers = Template['cocinando'].__helpers;
 
 Template.cookSmall.rendered = function () {
 	$('#recipesSlide').slick({
-		mobileFirst: true,
 		arrows: false
 	});
 };
