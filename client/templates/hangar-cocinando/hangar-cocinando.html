@@ -1,7 +1,13 @@
 <template name="cocinando">
-	{{#if isMobile}}
-		{{> cookSmall}}
-	{{else}}
-		{{> cookLarge}}
-	{{/if}}
+	<div class="cocinando">
+		{{#if isMobile}}
+			{{> cookSmall}}
+		{{else}}
+			{{> cookLarge}}
+		{{/if}}
+		{{> currentRecipe}}
+		<div class="hidden">
+			{{resize}}
+		</div>
+	</div>
 </template>
