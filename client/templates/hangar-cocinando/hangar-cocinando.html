@@ -1,67 +1,13 @@
 <template name="cocinando">
-	{{#if isMobile}}
-		{{> cookSmall}}
-	{{else}}
-		{{> cookLarge}}
-	{{/if}}
-	<div class="container">
-		<div id="currentRecipe" class="col-lg-12">
-			<div class="recipe-content">
-				<h1>Gallo Pinto <span>Ga-joe peen-toh</span></h1>
-				<p>Commonly known as Pinto, gallo pinto is Costa Rica’s signature dish. This surprisingly delicious combo of rice and beans is eaten for lunch, breakfast or dinner in households all over the country.</p>
-				<div class="row">
-					<div class="col-lg-4">
-						<span>serves</span> four
-					</div>
-					<div class="col-lg-4">
-						<span>cooks in</span> 20 mins
-					</div>
-					<div class="col-lg-4">
-						<span>difficulty</span> easy
-					</div>
-				</div>
-				<div class="row">
-					<h2>Ingredients</h2>
-3 cups cooked rice
-2 cups cooked beans
-Half a celery stalk, minced
-Half an onion, minced
-Half a red bell pepper, minced
-1 TBSP Worcestershire sauce
-1 TSP ground cumin
-1 TBP cooking oil
-Salt & ground pepper
-1/4 cup fresh coriander
-
-					<div class="col-lg-6">
-						<ul>
-							<li>
-								
-							</li>
-							<li>
-								
-							</li>
-							<li>
-								
-							</li>
-							<li>
-								
-							</li>
-							<li>
-								
-							</li>
-						</ul>
-					</div>
-					<div class="col-lg-6">
-						
-					</div>
-				</div>
-				<h2>Preparation</h2>
-				<p></p>
-			</div>
+	<div class="cocinando">
+		{{#if isMobile}}
+			{{> cookSmall}}
+		{{else}}
+			{{> cookLarge}}
+		{{/if}}
+		{{> currentRecipe}}
+		<div class="hidden">
+			{{resize}}
 		</div>
-	</div>
-	<div class="hidden">
-		{{resize}}
 	</div>
 </template>

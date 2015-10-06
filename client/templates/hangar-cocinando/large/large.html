@@ -1,44 +1,42 @@
 <template name="cookLarge">
-	<div id="fullpage" class="cocinando">
-	    <div class="section">
-	    	<header class="container">
-				<div class="text-center">
-					<div class="header-buffer">
-						<div class="vertical">
-							<img class="img-responsive center-block" src="images/tradiciones/tradiciones.svg" alt="Tradiciones. Sabores, colores y olores costarricenses">
-							<h1>Make your own<br> Costa Rican meal!</h1>
-						</div>
-					</div>
-				</div>
-			</header>
-	    </div>
-	    <div class="section">
-	    	<div class="container">
-				<div class="recipes">
-					<div class="row">
-						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-							{{#each mainDishes}}
-								{{> recipe}}
-							{{/each}}
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-							{{#each sideDishes}}
-								{{> recipe}}
-							{{/each}}
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-							{{#each beverages}}
-								{{> recipe}}
-							{{/each}}
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-							{{#each desserts}}
-								{{> recipe}}
-							{{/each}}
-						</div>
+    <div class="section">
+    	<header class="container">
+			<div class="text-center">
+				<div class="header-buffer">
+					<div class="vertical">
+						<img class="img-responsive center-block" src="images/tradiciones/tradiciones.svg" alt="Tradiciones. Sabores, colores y olores costarricenses">
+						<h1>Make your own<br> Costa Rican meal!</h1>
 					</div>
 				</div>
 			</div>
-	    </div>	    
-	</div>
+		</header>
+    </div>
+    <div class="section">
+    	<div class="container">
+			<div class="recipes">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						{{#each mainDishes}}
+							{{> recipe}}
+						{{/each}}
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						{{#each sideDishes}}
+							{{> recipe}}
+						{{/each}}
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						{{#each beverages}}
+							{{> recipe}}
+						{{/each}}
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						{{#each desserts}}
+							{{> recipe}}
+						{{/each}}
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>	 
 </template>

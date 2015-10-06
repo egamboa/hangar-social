@@ -9,7 +9,6 @@ body{
 
         .section{
             background-color: #90D2CB;
-
         }
 
         .header-buffer{
@@ -121,7 +120,7 @@ body{
        .extra{
             height: 114px;
             display: table;
-            width: 100%;
+            width: 100.5%;
             .vertical{
                 display: table-cell;
                 text-align: center;
@@ -180,6 +179,62 @@ body{
     }
     #currentRecipe{
         height: 100vh;
-        background-color: #f3f6db;
+        background-color: #FDF6DC;
+        overflow-y: scroll;
+        .recipe-content{
+            padding: 10% 25% 0;
+            h1{
+                font-family: din-bold;
+                font-style: normal;
+                font-size: 30px;
+                color: #314040;
+                margin-bottom: 30px;
+                span{
+                    font-family: din-regular;
+                    font-size: 25px;
+                }
+            }
+            h2{
+                font-family: din-bold;
+                font-size: 18px;
+                font-style: normal;
+                color: #68bc68;
+                text-align: left;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+            p, li{
+                font-family: din-regular;
+                font-size: 16px;
+                line-height: 25px;
+                color: #666;
+                font-style: normal;
+            }
+            span.separator{
+                display: block;
+                width: 100%;
+                border-bottom: 2px solid #8dd3cb;
+                margin: 20px 0;
+            }
+            .recipe-info{
+                font-family: din-regular;
+                font-size: 16px;
+                
+                span{
+                    color: #68bc68;
+                    font-family: din-bold;
+                    text-transform: uppercase;
+                }
+            }
+            ul, li{
+                list-style: none;
+                padding: 0px;
+            }
+            .recipe-close{
+                float: right;
+                margin-top: 5px;
+                display: inline-block;
+            }
+        }
     }
 }
