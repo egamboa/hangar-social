@@ -24,3 +24,4 @@ var Cookies = new function () {
 		createCookie(name,"",-1);
 	}
 }
+
