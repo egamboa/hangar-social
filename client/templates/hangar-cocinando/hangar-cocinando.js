@@ -1,19 +1,7 @@
 Template.cocinando.rendered = function () {
-	$(".fancybox")
-	.fancybox({
-		padding : 50,
-		margin: 50,
-		tpl: {
-			closeBtn: '<a title="Close" class="fancybox-item fancybox-close fancyClose" href="javascript:;"></a>'
-		},
-		helpers:  {
-			title:  null
-		}
-	});
-
-	$(".fancybox").click(function(event) {
-		event.preventDefault();
-	});
+	Meteor.call("getAllRecipes", function (error, result) { 
+    	Session.set('currentRecipes', result);
+    });
 };
 
 Session.set("resize", null); 
@@ -45,4 +33,19 @@ Template.cocinando.helpers({
 		return Session.get('resize');
 	},
 
+	allRecipes: function(recipes) {
+		return Session.get('currentRecipes');
+	},
+	beverages: function (recipes) {
+		return _.filter(Session.get('currentRecipes'), function(recipe){ return recipe.type == "Beverage"; });
+	},
+	mainDishes: function (recipes) {
+		return _.filter(Session.get('currentRecipes'), function(recipe){ return recipe.type == "Main Dish"; });
+	},
+	desserts: function (recipes) {
+		return _.filter(Session.get('currentRecipes'), function(recipe){ return recipe.type == "Dessert"; });	
+	},
+	sideDishes: function (recipes) {
+		return _.filter(Session.get('currentRecipes'), function(recipe){ return recipe.type == "Side Dish"; });
+	}
 });

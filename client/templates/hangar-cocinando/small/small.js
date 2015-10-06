@@ -1,3 +1,4 @@
+Template['cookSmall'].__helpers = Template['cocinando'].__helpers;
 
 Template.cookSmall.rendered = function () {
 	$('#recipesSlide').slick({
@@ -13,4 +14,3 @@ Template.cookSmall.events({
 		}, 1000)
 	}
 });
-
