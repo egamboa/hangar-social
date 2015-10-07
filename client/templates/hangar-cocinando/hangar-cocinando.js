@@ -1,6 +1,11 @@
 Template.cocinando.rendered = function () {
 	Meteor.call("getAllRecipes", function (error, result) { 
     	Session.set('currentRecipes', result);
+	    setTimeout(function(){
+			$('#recipesSlide').fadeIn(300).slick({
+				arrows: false
+			});
+		}, 300);
     });
 };
 

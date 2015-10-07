@@ -3,6 +3,6 @@ Template.recipe.rendered = function () {
 };
  Template.recipe.events({
  	'click .seeRecipe': function () {
- 		console.log('listo');
+ 		console.log(this);
  	}
  });

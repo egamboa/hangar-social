@@ -125,6 +125,29 @@ var recipes =[
 }
 ];
 
+var textRecipes = [
+	{
+		'id': 1,
+		'description': 'Commonly known as Pinto, gallo pinto is Costa Rica’s signature dish. This surprisingly delicious combo of rice and beans is eaten for lunch, breakfast or dinner in households all over the country.',
+		'ingredients': {
+			{'name': '3 cups cooked rice'},
+			{'name': '2 cups cooked beans'},
+			{'name': 'Half a celery stalk, minced'},
+			{'name': 'Half an onion, minced'},
+			{'name': 'Half a red bell pepper, minced'},
+			{'name': '1 TBSP Worcestershire sauce'},
+			{'name': '1 TSP ground cumin'},
+			{'name': '1 TBP cooking oil'},
+			{'name': 'Salt & ground pepper'},
+			{'name': '1/4 cup fresh coriander'}
+		},
+		'preparation': 'In a large skillet, melt the butter at medium heat and add in the garlic, onion, sweet pepper and celery. Stir-fry for 3 minutes, and then add in the black beans and their broth. Before incorporating the rice, season the beans with Worcestershire sauce and cook for 5 minutes. Mix the rice slowly and cook until the liquid has evaporated. Add the cilantro, salt and pepper to taste and serve.',
+		'difficulty': 'easy',
+		'duration': '20 minutes'
+	}
+]
+
+
 Meteor.methods({
 	getAllRecipes: function(){
 		return recipes;
