@@ -3,6 +3,12 @@ Template.recipe.rendered = function () {
 };
  Template.recipe.events({
  	'click .seeRecipe': function () {
- 		console.log(this);
+ 		Session.set('currentRecipe', {});
+ 		var self = this;
+ 		Meteor.call("getCurrentRecipe", self, function (error, result) { 
+ 			result = $.extend(result, self);
+			Session.set('currentRecipe', result);
+			$('#currentRecipe').addClass('opened');
+	    });
  	}
  });

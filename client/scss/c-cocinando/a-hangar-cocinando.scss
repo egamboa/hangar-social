@@ -290,17 +290,17 @@ body{
         z-index: 100;
         top: 100%;
         width: 100%;
-        -webkit-transition: all 1s ease-in-out;
-        -moz-transition: all 1s ease-in-out;
-        -ms-transition: all 1s ease-in-out;
-        -o-transition: all 1s ease-in-out;
-        transition: all 1s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
         -webkit-transform: translate3d(0,0,0);
         -moz-transform: translate3d(0,0,0);
         -ms-transform: translate3d(0,0,0);
         -o-transform: translate3d(0,0,0);
         transform: translate3d(0,0,0);
-        &.open{
+        &.opened{
             top: 0%;
         }
 
@@ -308,6 +308,9 @@ body{
             height: 100vh;
             background-color: #FDF6DC;
             overflow-y: scroll;
+            -ms-overflow-style: none;
+            overflow: -moz-scrollbars-none;
+            &::-webkit-scrollbar { width: 0 !important }
             .recipe-content{
                 padding: 10% 25% 5%;
                 h1{
