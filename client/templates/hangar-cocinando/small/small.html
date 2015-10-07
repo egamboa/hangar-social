@@ -31,16 +31,7 @@
 			<h2>Make your own Costa Rican meal!</h2>
 			<div id="recipesSlide" >
 				{{#each allRecipes}}
-				<div class="item">
-					<div class="text-center">
-						<div class="vertical">
-							<img src="{{thumbnail}}" style="background-color:#{{color}}" />	
-						</div>
-						<h3>{{name}}</h3>
-						<h4>{{subtitle}}</h4>
-						<a class="btn btn-default" href="#">See Recipe</a>
-					</div>
-				</div>
+					{{> smallRecipe}}
 				{{/each}}
 			</div>
 		</div>

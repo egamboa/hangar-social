@@ -5,6 +5,12 @@ Template.cocinando.rendered = function () {
 			$('#recipesSlide').fadeIn(300).slick({
 				arrows: false
 			});
+			$('#cookSmall').on('click', '.smallSeeRecipe', function(event){
+				Meteor.call("getCurrentRecipe", $(event.target).attr('data-id'), function (error, result) { 
+					Session.set('currentRecipe', result);
+					$('#currentRecipe').addClass('opened');
+		    	});
+			});
 		}, 300);
     });
 };

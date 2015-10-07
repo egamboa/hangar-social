@@ -373,12 +373,37 @@ var textRecipes = [
 	}
 ]
 
+var deepExtend = function(out) {
+  out = out || {};
+
+  for (var i = 1; i < arguments.length; i++) {
+    var obj = arguments[i];
+
+    if (!obj)
+      continue;
+
+    for (var key in obj) {
+      if (obj.hasOwnProperty(key)) {
+        if (typeof obj[key] === 'object')
+          deepExtend(out[key], obj[key]);
+        else
+          out[key] = obj[key];
+      }
+    }
+  }
+
+  return out;
+};
+
+
 
 Meteor.methods({
 	getAllRecipes: function(){
 		return recipes;
 	},
 	getCurrentRecipe: function(theRecipe) {
-		return _.first(_.filter(textRecipes, function(recipe){ return recipe.id == theRecipe.id; }));
+		var textRecipe = _.first(_.filter(textRecipes, function(recipe){ return recipe.id == theRecipe; }));
+		var recipe = _.first(_.filter(recipes, function(recipe){ return recipe.id == theRecipe; }));
+		return deepExtend({}, textRecipe, recipe);
 	}
 });
