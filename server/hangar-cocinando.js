@@ -144,6 +144,9 @@ var textRecipes = [
 		'preparation': 'In a large skillet, melt the butter at medium heat and add in the garlic, onion, sweet pepper and celery. Stir-fry for 3 minutes, and then add in the black beans and their broth. Before incorporating the rice, season the beans with Worcestershire sauce and cook for 5 minutes. Mix the rice slowly and cook until the liquid has evaporated. Add the cilantro, salt and pepper to taste and serve.',
 		'difficulty': 'easy',
 		'duration': '20 minutes'
+	},
+	{
+		
 	}
 ]
 
