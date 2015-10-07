@@ -1,134 +1,137 @@
 @media only screen and (max-width: 599px) {
-	 .topContent {
- 		height: 100vh;
- 		.rowPanel{
-			height: 20.3%;
-			display: table;
-			width: 100%;
-			margin: 0;
-		}
-			.salsa{
-				@extend .rowPanel;
-				background: #f2c000;
-			}
-			.tenedor{
-				@extend .rowPanel;
-				background: #fdf6dc;
-			}
-			.tradiciones{
-				@extend .rowPanel;
-			background: #8dd3cb;
-			}
-			.tradicionesTexto{
-				color: black;
-				font-family: din-bold;
-			}
-			.cuchara{
-				@extend .rowPanel;
-				background: #ede4ca;
-			}		
-			.confites{
-				@extend .rowPanel;
-				background: #4fa84c;
-			}
-
-		.vertical{
-			display: table-cell;
-			text-align: center;
-			vertical-align: middle;
-		}
-  	}
-
-  	#cookSmall {
-        height: 100%; 
-        width: 100%;
-
-        #recipesSlide{
-            display: none;
-        }
-
-        .recipe {
-            background-color: #ede4ca;
-            height: 100vh;
-            width: 100%;
-
-            h2 {
-                background-color: #8dd3cb;
-                color: #000;
-                font-size: 6vw;
-                margin: 0;
-                padding-top: 5%;
-                height: 8vh;
-                border-bottom: 2px solid #000;
-                font-family: din-regular;
-            }
-
-            .text-center {
-                width: 100%;
-            }
-            .vertical{
-                display: table-cell;
-                vertical-align: middle;
-                width: 80vh;
-
-                img{
-                    width: 90%;
-                    padding: 10% 10%;
-                    margin: 0 auto;
-                } 
-            }
-
-            .carousel {
-                height: 60vh;
-            }
-
-            img {
-                height: 75vw;
-                width: 90%;
-                padding: 5% 10% 0;
-                margin: 0 auto;
-            }
-
-            h3 {
-                color: #000;
-                font-size: 50px;
-                font-size: 10vw;
-                font-family: din-bold;
-                width: 50%;
-                border-bottom: 2px solid #000;
-                margin-left: 25%;
-                margin-top: 5%;
-            }   
-
-            h4 {
-                font-family: din-regular;
-                font-size: 30px;
-                font-size: 5.2vw;
-                margin-top: 5%;
-            }
-
-            .btn-default {
-                background-color: #68bc68;
-                color: #fff;
-                height: 50px;
-                font-family: din-regular;
-                font-size: 20px;
-                font-size: 4.5vw;
-                text-transform: uppercase;
-                border-radius: 30px;
-                margin-top: 5%;
-                padding-top: 2vh;
-            }
-            .glyphicon {
-                font-size: 40px;
-            }
-        }
-        .detail {
-            display: none;
-        }
+  .topContent {
+     height: 100vh;
+     .rowPanel{
+         height: 20.3%;
+         display: table;
+         width: 100%;
+         margin: 0;
+     }
+     .salsa{
+        @extend .rowPanel;
+        background: #f2c000;
     }
+    .tenedor{
+        @extend .rowPanel;
+        background: #fdf6dc;
+    }
+    .tradiciones{
+        @extend .rowPanel;
+        background: #8dd3cb;
+    }
+    .tradicionesTexto{
+        color: black;
+        font-family: din-bold;
+    }
+    .cuchara{
+        @extend .rowPanel;
+        background: #ede4ca;
+    }		
+    .confites{
+        @extend .rowPanel;
+        background: #4fa84c;
+    }
+
+    .vertical{
+     display: table-cell;
+     text-align: center;
+     vertical-align: middle;
+ }
 }
 
+#cookSmall {
+    height: 100%; 
+    width: 100%;
+
+    #recipesSlide{
+        display: none;
+    }
+
+    .recipe {
+        background-color: #ede4ca;
+        height: 100vh;
+        width: 100%;
+
+        h2 {
+            background-color: #8dd3cb;
+            color: #000;
+            font-size: 6vw;
+            margin: 0;
+            padding-top: 5%;
+            height: 64px;
+            border-bottom: 2px solid #000;
+            font-family: din-regular;
+        }
+
+        .text-center {
+            width: 100%;
+        }
+        .vertical{
+            display: table-cell;
+            vertical-align: middle;
+            width: 80vh;
+
+            img{
+                width: 90%;
+                padding: 10% 10%;
+                margin: 0 auto;
+            } 
+        }
+
+        .carousel {
+            height: 60vh;
+        }
+
+        img {
+            height: 75vw;
+            width: 90%;
+            padding: 5% 10% 0;
+            margin: 0 auto;
+        }
+
+        h3 {
+
+            margin-top: 5%;
+            width: 100%;
+            span{
+                color: #000;
+                font-size: 50px; 
+                font-size: 10vw;
+                font-family: din-bold;
+                border-bottom: 2px solid #000;
+            }  
+        }   
+
+        h4 {
+            font-family: din-regular;
+            font-size: 30px;
+            font-size: 5.2vw;
+            margin-top: 5%;
+        }
+
+        .btn-default {
+            outline: 0;
+            background-color: #68bc68;
+            color: #fff;
+            height: 30px;
+            width: 113px;
+            font-family: din-regular;
+            //font-size: 20px;
+            font-size: 3.5vw;
+            text-transform: uppercase;
+            border-radius: 15px;
+            margin-top: 5%;
+            padding: auto;
+        }
+        .glyphicon {
+            font-size: 40px;
+        }
+    }
+    .detail {
+        display: none;
+    }
+}
+}
 .footer {
 	height: 85px;
     color: #887;
