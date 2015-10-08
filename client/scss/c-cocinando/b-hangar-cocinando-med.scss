@@ -1,3 +1,18 @@
+@media only screen and (max-width: 1200px) {
+	body{
+		#currentRecipe{
+			.recipe-holder{
+				.recipe-content{
+		            .recipe-info{
+		                span{
+		                	display: block;
+		                }
+		            }
+		        }
+			}
+	    }
+	}
+}
 @media only screen and (max-width: 991px) {
 	body{
 		#currentRecipe{
