@@ -16,6 +16,10 @@
     src: url("/fonts/DIN-Bold.otf") format("truetype");
 }
 @font-face {
+    font-family: din-light;
+    src: url("/fonts/DIN-Light.otf") format("truetype");
+}
+@font-face {
     font-family: georgia-italic;
     src: url("/fonts/geo-ita.ttf") format("truetype");
 }
@@ -61,4 +65,7 @@ header iframe .pluginButtonInline{
 			font-size: 8px;
 		}
 	}
+}
+.noscroll{
+	overflow: hidden;
 }

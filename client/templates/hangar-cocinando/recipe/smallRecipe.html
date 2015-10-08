@@ -1,0 +1,14 @@
+<template name="smallRecipe">
+	<div class="item">
+		<div class="text-center">
+			<div class="vertical" style="background-color:#{{#if isBadColor}}fdf6dc {{else}}{{color}} {{/if}}">
+				<div class="vertical-son">
+					<img src="{{thumbnail}}" />	
+				</div>
+			</div>
+			<h3><span>{{name}}</span></h3>
+			<h4>{{subtitle}}</h4>
+			<a class="btn btn-default smallSeeRecipe" data-id="{{id}}" href="#">See Recipe</a>
+		</div>
+	</div>
+</template>
