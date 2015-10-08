@@ -279,6 +279,7 @@ body{
                     span{
                         font-family: din-regular;
                         font-size: 28px;
+                        display: block;
                     }
                 }
                 h2{
@@ -326,6 +327,9 @@ body{
                 }
                 ul{
                     margin-bottom: 35px;
+                    li.title{
+                        font-family: din-bold;
+                    }
                 }
                 .recipe-close{
                     float: right;
@@ -335,31 +339,35 @@ body{
             }
         }
     }
-}
-.footer {
-    background-color: #3d464d;
-    .container{
-        .pull-right .twitter-logo , .face-logo {
-            margin-right: 25px;
-        }
-        .pull-left{
-            .logoFooter{
-                margin-right: 30px;
+    .footer {
+        height: 80px;
+        padding-top: 28px;
+        background-color: #3d464d;
+        .container{
+            .pull-right .twitter-logo , .face-logo {
+                margin-right: 25px;
             }
-            .spanFooter{
-                color: #fef6db;
-                font-size: 14pt;
-                font-family: din-regular;
-                .spanFooterBold{
-                    font-size: 14pt;
-                    color: #8dd3cb; 
-                    font-family: 'dinboldalternate';
+            .pull-left{
+                .logoFooter{
+                    margin-right: 30px;
+                    margin-top: -7px;
                 }
+                .spanFooter{
+                    color: #fef6db  ;
+                    font-size: 14pt;
+                    font-family: din-regular;
+                    .spanFooterBold{
+                        font-size: 14pt;
+                        color: #8dd3cb  ; 
+                        font-family: din-bold;
+                    }
+                }
+            }
+            .hidden-lg{
+                display: none;
             }
         }
     }
-} 
-
 
 @-webkit-keyframes arrowMove {
     to { transform: scale(1.4); }
@@ -368,4 +376,5 @@ body{
 @keyframes arrowMove {
     to { transform: scale(1.4); }
 }   
+
 
