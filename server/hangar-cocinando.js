@@ -106,7 +106,7 @@ var recipes =[
 		'class': 'type4',
 		'thumbnail': 'images/tradiciones/icons/platanos-dulces.svg',
 		'name': 'Plátano dulce',
-		'english': 'Plantains in syrup',
+		'english': 'Plantains in Syrup',
 		'subtitle': '(plah-tah-no dool-seh)',
 		'type': 'Dessert',
 		'color': 'ede4ca',
@@ -130,7 +130,7 @@ var recipes =[
 		'class': 'type2',
 		'thumbnail': 'images/tradiciones/icons/pan-elote.svg',
 		'name': 'Pan de elote',
-		'english': 'Corn bread',
+		'english': 'Corn Bread',
 		'subtitle': '(pan de el-oh-teh)',
 		'type': 'Dessert',
 		'color': '53a751'

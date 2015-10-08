@@ -1,6 +1,7 @@
 Template['cookSmall'].__helpers = Template['cocinando'].__helpers;
 
 Template.cookSmall.rendered = function () {
+	
 };
 
 Template.cookSmall.events({

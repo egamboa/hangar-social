@@ -29,15 +29,15 @@ body{
                 }
                 img{
                     width: 100%;
-                    padding-top: 10%;
+                    padding-top: 4%;
                 } 
                 .arrow{
                     width: 100%;
-                    margin-top: 5%;
+                    margin-top: 25px;
                     img{
                         left: 48%;
                         padding: 0;
-                        width: 3%;
+                        width: 20px;
                         animation: arrowMove 1s infinite alternate;
                         transform-origin: center;
                     }
@@ -109,9 +109,7 @@ body{
                     span.title{
                         color: #314040;
                         text-decoration: none;
-                        border-bottom: 2px solid #fff;
-                        border-bottom-left-radius: 4px 2px;
-                        border-bottom-right-radius: 4px 2px;
+                        border-bottom: 2px solid #ede4ca;
                         text-transform: uppercase; 
                         font-family: din-bold;
                     }
@@ -363,7 +361,7 @@ body{
                     }
                 }
             }
-            .hidden-lg{
+            .hiddenlg{
                 display: none;
             }
         }
