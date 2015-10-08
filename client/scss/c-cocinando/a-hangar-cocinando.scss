@@ -328,10 +328,28 @@ body{
         }
     }
     .footer {
-        height: 85px;
-        color: #887;
-        background-color: #3d464d;
         padding-top: 30px;
         padding-bottom: 30px;
+        background-color: #3d464d;
+        .container{
+            .pull-right .twitter-logo , .face-logo {
+                margin-right: 25px;
+            }
+            .pull-left{
+                .logoFooter{
+                    margin-right: 30px;
+                }
+                .spanFooter{
+                    color: #fef6db  ;
+                    font-size: 14pt;
+                    font-family: din-regular;
+                    .spanFooterBold{
+                        font-size: 14pt;
+                        color: #8dd3cb  ; 
+                        font-family: din-bold;
+                    }
+                }
+            }
+        }
     }
 }
