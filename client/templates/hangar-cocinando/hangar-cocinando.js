@@ -3,7 +3,11 @@ Template.cocinando.rendered = function () {
     	Session.set('currentRecipes', result);
 	    setTimeout(function(){
 			$('#recipesSlide').fadeIn(300).slick({
-				arrows: false
+				arrows: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				centerMode: true,
+				variableWidth: true
 			});
 			$('#cookSmall').on('click', '.smallSeeRecipe', function(event){
 				Meteor.call("getCurrentRecipe", $(event.target).attr('data-id'), function (error, result) { 
@@ -34,9 +38,10 @@ Template.cocinando.helpers({
 	},
 
 	resize: function() {
-		if($(window).width() > 419){
+		if($(window).width() > 600){
 			$('.recipes .recipe').height($('.recipe').first().width());
 		}else{
+			$('.recipe .vertical img').height($('.recipe .vertical img').first().width()); 
 			$('.recipes .recipe').height('auto');
 		}
 		

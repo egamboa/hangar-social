@@ -16,7 +16,7 @@ var recipes =[
 	'id': 2,
 	'class': 'type2',
 	'thumbnail': 'images/tradiciones/icons/chifrijo.svg',
-	'name': 'Chrifrijo',
+	'name': 'Chifrijo',
 	'subtitle': '(chee-free-ho)',
 	'type': 'Main Dish',
 	'color': '53a751'

@@ -25,6 +25,7 @@ body{
                     font-size: 20px;
                     margin-top: 5%;
                     line-height: 24px;
+                    font-style: normal;
                 }
                 img{
                     width: 100%;
@@ -35,7 +36,6 @@ body{
 
         }
         .recipes{
-            margin-bottom: 20px;
             .col-lg-3{
                 padding: 0px;
             }
@@ -85,12 +85,12 @@ body{
 
                 h3{
                     display: table-cell;
-                    font-size: 30px;
+                    font-size: 26px;
                     font-family: din-bold;
                     opacity: 1;
                     vertical-align: middle;
                     span.title{
-                        color: #000;
+                        color: #314040;
                         text-decoration: none;
                         border-bottom: 2px solid #fff;
                         border-bottom-left-radius: 4px 2px;
@@ -100,7 +100,7 @@ body{
                     }
 
                     span.subtitle{
-                        color: #333;
+                        color: #314040;
                         font-family: din-regular;
                         font-size: 16px;
                     }
@@ -118,10 +118,10 @@ body{
                     height: 40px;
                     width: 148px;
                     font-family: din-regular;
-                    font-size: 18px;
+                    font-size: 16px;
                     text-transform: uppercase;
                     border-radius: 20px;
-                    padding-top: 5px;
+                    padding-top: 7px;
                     margin-top: 40px;
                     border-color: #ede4ca;
                     border-width: 2px;
@@ -145,11 +145,21 @@ body{
                     border-color: #68bc68;
                     color: #68bc68;
                 }
+                h3{
+                    span.title{
+                        border-color: #68bc68;
+                    }
+                }
             }
             &.type6{
                 .btn-default{
                     border-color: #68bc68;
                     color: #68bc68;
+                }
+                h3{
+                    span.title{
+                        border-color: #68bc68;
+                    }
                 }
             }
         }
