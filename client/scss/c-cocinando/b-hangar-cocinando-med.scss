@@ -71,6 +71,16 @@
 		        }
 			}
 	    }
+	    .footer {
+	        .container{
+	            .hidden-lg{
+	                display: inline;
+	            }
+	            .hidden-md{
+	                display: none;
+	            }
+	        }
+	    }
 	}
 }
 

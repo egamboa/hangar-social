@@ -328,8 +328,8 @@ body{
         }
     }
     .footer {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        height: 80px;
+        padding-top: 28px;
         background-color: #3d464d;
         .container{
             .pull-right .twitter-logo , .face-logo {
@@ -338,6 +338,7 @@ body{
             .pull-left{
                 .logoFooter{
                     margin-right: 30px;
+                    margin-top: -7px;
                 }
                 .spanFooter{
                     color: #fef6db  ;
@@ -349,6 +350,9 @@ body{
                         font-family: din-bold;
                     }
                 }
+            }
+            .hidden-lg{
+                display: none;
             }
         }
     }
