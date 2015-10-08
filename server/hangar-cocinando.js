@@ -468,7 +468,6 @@ Meteor.methods({
 	},
 	getCurrentRecipe: function(theRecipe) {
 		var textRecipe = _.first(_.filter(textRecipes, function(recipe){ return recipe.id == theRecipe; }));
-		console.log(textRecipe);
 		var recipe = _.first(_.filter(recipes, function(recipe){ return recipe.id == theRecipe; }));
 		return extend(textRecipe, recipe);
 	}
