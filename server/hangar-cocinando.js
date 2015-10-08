@@ -1,128 +1,128 @@
 var recipes =[
-{
-	'id': 1,
-	'class': 'type1',
-	'thumbnail': 'images/tradiciones/icons/gallo-pinto.svg',
-	'name': 'Gallo Pinto',
-	'subtitle': '(ga-joe peen-toh)',
-	'type': 'Main Dish',
-	'color': '68bc68',
-	'extra': {
-		'position': false,
-		'color': 'tenedor'
+	{
+		'id': 1,
+		'class': 'type1',
+		'thumbnail': 'images/tradiciones/icons/gallo-pinto.svg',
+		'name': 'Gallo Pinto',
+		'subtitle': '(ga-joe peen-toh)',
+		'type': 'Main Dish',
+		'color': '68bc68',
+		'extra': {
+			'position': false,
+			'color': 'tenedor'
+		}
+	},
+	{
+		'id': 2,
+		'class': 'type2',
+		'thumbnail': 'images/tradiciones/icons/chifrijo.svg',
+		'name': 'Chifrijo',
+		'subtitle': '(chee-free-ho)',
+		'type': 'Main Dish',
+		'color': '53a751'
+	},
+	{
+		'id': 3,
+		'class': 'type3',
+		'thumbnail': 'images/tradiciones/icons/sopa-negra.svg',
+		'name': 'Sopa Negra',
+		'subtitle': '(sou-pah neh-grah)',
+		'type': 'Main Dish',
+		'color': '8dd3cb'
+	},
+	{
+		'id': 4,
+		'class': 'type4',
+		'thumbnail': 'images/tradiciones/icons/tortillas.svg',
+		'name': 'Tortillas',
+		'subtitle': '(tor-tee-yas)',
+		'type': 'Side Dish',
+		'color': 'ede4ca',
+		'extra': {
+			'position': true,
+			'color': 'cuchara'
+		}
+	},
+	{
+		'id': 5,
+		'class': 'type5',
+		'thumbnail': 'images/tradiciones/icons/mango.svg',
+		'name': 'Mango ceviche',
+		'subtitle': '(man-go seh-vee-cheh)',
+		'type': 'Side Dish',
+		'color': 'f2c000'
+	},
+	{
+		'id': 6,
+		'class': 'type6',
+		'thumbnail': 'images/tradiciones/icons/picadillo.svg',
+		'name': 'Plantain picadillo',
+		'subtitle': '(pee-cah-dee-joe)',
+		'type': 'Side Dish',
+		'color': 'fdf6dc'
+	},
+	{
+		'id': 7,
+		'class': 'type5',
+		'thumbnail': 'images/tradiciones/icons/agua-dulce.svg',
+		'name': 'Agua Dulce',
+		'subtitle': '(ah-goo-ah dool-seh)',
+		'type': 'Beverage',
+		'color': 'f2c000'
+	},
+	{
+		'id': 8,
+		'class': 'type3',
+		'thumbnail': 'images/tradiciones/icons/horchata.svg',
+		'name': 'Horchata',
+		'subtitle': '(or-chat-ah)',
+		'type': 'Beverage',
+		'color': '8dd3cb',
+		'extra': {
+			'position': false,
+			'color': 'salsa'
+		}
+	},
+	{
+		'id': 9,
+		'class': 'type3',
+		'thumbnail': 'images/tradiciones/icons/agua-de-sapo.svg',
+		'name': 'Agua de sapo',
+		'subtitle': '(ah-goo-ah de sa-poh)',
+		'type': 'Beverage',
+		'color': '8dd3cb'
+	},
+	{
+		'id': 10,
+		'class': 'type4',
+		'thumbnail': 'images/tradiciones/icons/platanos-dulces.svg',
+		'name': 'Plátano dulce',
+		'subtitle': '(plah-tah-no dool-seh)',
+		'type': 'Dessert',
+		'color': 'ede4ca',
+		'extra': {
+			'position': false,
+			'color': 'confites'
+		}
+	},
+	{
+		'id': 11,
+		'class': 'type1',
+		'thumbnail': 'images/tradiciones/icons/cocadas.svg',
+		'name': 'Cocadas',
+		'subtitle': '(coke-ah-das)',
+		'type': 'Dessert',
+		'color': '68bc68'
+	},
+	{
+		'id': 12,
+		'class': 'type2',
+		'thumbnail': 'images/tradiciones/icons/pan-elote.svg',
+		'name': 'Pan de elote',
+		'subtitle': '(pan de el-oh-teh)',
+		'type': 'Dessert',
+		'color': '53a751'
 	}
-},
-{
-	'id': 2,
-	'class': 'type2',
-	'thumbnail': 'images/tradiciones/icons/chifrijo.svg',
-	'name': 'Chifrijo',
-	'subtitle': '(chee-free-ho)',
-	'type': 'Main Dish',
-	'color': '53a751'
-},
-{
-	'id': 3,
-	'class': 'type3',
-	'thumbnail': 'images/tradiciones/icons/sopa-negra.svg',
-	'name': 'Sopa Negra',
-	'subtitle': '(sou-pah neh-grah)',
-	'type': 'Main Dish',
-	'color': '8dd3cb'
-},
-{
-	'id': 4,
-	'class': 'type4',
-	'thumbnail': 'images/tradiciones/icons/tortillas.svg',
-	'name': 'Tortillas',
-	'subtitle': '(tor-tee-yas)',
-	'type': 'Side Dish',
-	'color': 'ede4ca',
-	'extra': {
-		'position': true,
-		'color': 'cuchara'
-	}
-},
-{
-	'id': 5,
-	'class': 'type5',
-	'thumbnail': 'images/tradiciones/icons/mango.svg',
-	'name': 'Mango ceviche',
-	'subtitle': '(man-go seh-vee-cheh)',
-	'type': 'Side Dish',
-	'color': 'f2c000'
-},
-{
-	'id': 6,
-	'class': 'type6',
-	'thumbnail': 'images/tradiciones/icons/picadillo.svg',
-	'name': 'Plantain picadillo',
-	'subtitle': '(pee-cah-dee-joe)',
-	'type': 'Side Dish',
-	'color': 'fdf6dc'
-},
-{
-	'id': 7,
-	'class': 'type5',
-	'thumbnail': 'images/tradiciones/icons/agua-dulce.svg',
-	'name': 'Agua Dulce',
-	'subtitle': '(ah-goo-ah dool-seh)',
-	'type': 'Beverage',
-	'color': 'f2c000'
-},
-{
-	'id': 8,
-	'class': 'type3',
-	'thumbnail': 'images/tradiciones/icons/horchata.svg',
-	'name': 'Horchata',
-	'subtitle': '(or-chat-ah)',
-	'type': 'Beverage',
-	'color': '8dd3cb',
-	'extra': {
-		'position': false,
-		'color': 'salsa'
-	}
-},
-{
-	'id': 9,
-	'class': 'type3',
-	'thumbnail': 'images/tradiciones/icons/agua-de-sapo.svg',
-	'name': 'Agua de sapo',
-	'subtitle': '(ah-goo-ah de sa-poh)',
-	'type': 'Beverage',
-	'color': '8dd3cb'
-},
-{
-	'id': 10,
-	'class': 'type4',
-	'thumbnail': 'images/tradiciones/icons/platanos-dulces.svg',
-	'name': 'Plátano dulce',
-	'subtitle': '(plah-tah-no dool-seh)',
-	'type': 'Dessert',
-	'color': 'ede4ca',
-	'extra': {
-		'position': false,
-		'color': 'confites'
-	}
-},
-{
-	'id': 11,
-	'class': 'type1',
-	'thumbnail': 'images/tradiciones/icons/cocadas.svg',
-	'name': 'Cocadas',
-	'subtitle': '(coke-ah-das)',
-	'type': 'Dessert',
-	'color': '68bc68'
-},
-{
-	'id': 12,
-	'class': 'type2',
-	'thumbnail': 'images/tradiciones/icons/pan-elote.svg',
-	'name': 'Pan de elote',
-	'subtitle': '(pan de el-oh-teh)',
-	'type': 'Dessert',
-	'color': '53a751'
-}
 ];
 
 var textRecipes = [
@@ -146,28 +146,6 @@ var textRecipes = [
 		'duration': '20 minutes', 
 		'countServes': '4',
 		'isVegan': true
-	},
-	{
-		'id': 3,
-		'description': 'This healthy and easy recipe is made from the leftover liquid from when you cook black beans.  After trying it, black bean soup will be all you will wish for. You can’t imagine how wonderful this tastes on a chilly day, snuggled in a blanket and accompanied by your favorite book.',
-		'ingredients': [	
-			{'name': '2 cups of cooked black beans'},
-			{'name': '4 cups of black vean broth'},
-			{'name': '½ an onion, minced'},
-			{'name': '½ cup chopped cilantro'},
-			{'name': '½ a red bell pepper, minced'},
-			{'name': '3 garlic cloves, minced'},
-			{'name': 'salt, pepper and ground cumin to taste'},
-			{'name': '4 tortillas, cut into strips and toasted'},
-			{'name': '4 tbsp of sour cream'},
-			{'name': '¼ cup of unsalted butter'},
-			{'name': '4 hard boiled eggs'}
-		],
-		'preparation': 'Melt the butter and stir-fry the vegetables in a pot at médium heat. Once the onion has cristalized, add in the remaining ingredients. Remove the pot from the heat once it begins to boil. Decorate with tortillas, sour cream, hard-boiled egg and chopped cilantro.',
-		'difficulty': 'easy',
-		'duration': '20 minutes', 
-		'countServes': '4',
-		'isVegan': false
 	},
 	{
 		'id': 2,
@@ -223,7 +201,43 @@ var textRecipes = [
 		'isVegan': false
 	},
 	{
+		'id': 3,
+		'description': 'This healthy and easy recipe is made from the leftover liquid from when you cook black beans.  After trying it, black bean soup will be all you will wish for. You can’t imagine how wonderful this tastes on a chilly day, snuggled in a blanket and accompanied by your favorite book.',
+		'ingredients': [	
+			{'name': '2 cups of cooked black beans'},
+			{'name': '4 cups of black vean broth'},
+			{'name': '½ an onion, minced'},
+			{'name': '½ cup chopped cilantro'},
+			{'name': '½ a red bell pepper, minced'},
+			{'name': '3 garlic cloves, minced'},
+			{'name': 'salt, pepper and ground cumin to taste'},
+			{'name': '4 tortillas, cut into strips and toasted'},
+			{'name': '4 tbsp of sour cream'},
+			{'name': '¼ cup of unsalted butter'},
+			{'name': '4 hard boiled eggs'}
+		],
+		'preparation': 'Melt the butter and stir-fry the vegetables in a pot at médium heat. Once the onion has cristalized, add in the remaining ingredients. Remove the pot from the heat once it begins to boil. Decorate with tortillas, sour cream, hard-boiled egg and chopped cilantro.',
+		'difficulty': 'easy',
+		'duration': '20 minutes', 
+		'countServes': '4',
+		'isVegan': false
+	},
+	{
 		'id': 4,
+		'description': 'Tortillas: the base of Latin American cuisine. For those unskilled cooks, they’re a true lifesaver. You can just fill them with virtually anything that’s lying around in your fridge or pantry. You’ll never have a boring meal if you have tortillas!',
+		'ingredients': [
+			{'name': '1 cup of corn flour'},
+			{'name': '¾ cup of warm water'},
+			{'name': '¼ tsp. salt'}
+		],
+		'preparation': 'Combine the corn flour with warm water until the dough comes together.  Make sure the dough is moist enough so that the tortillas don’t loose their flexibility. Add salt and separate the dough into 1-inch sized balls. \nPreheat a large skillet over medium-high heat.  Cover two cutting boards or plates with waxing paper and press each ball softly until flat. Place the tortilla on the skillet.  Don’t forget to turn it over and allow it to puff up. Repeat the process with the remaining dough.',
+		'difficulty': 'easy',
+		'duration': '30 minutes',
+		'countServes': '6',
+		'isVegan': true
+	},
+	{
+		'id': 5,
 		'description': 'A vegan spin on the traditional ceviche dish is perfect for summer cooking. This dish, which is also reminiscent of street food favorite – mango with lime and salt – is bright, simple and fruity.  You can have it as a salad, serve it alongside tortilla chips as a snack or as a side dish for your favorite meat, poultry or fish.',
 		'ingredients': [
 			{'name': '1 large red onion, thinly sliced'},
@@ -237,20 +251,6 @@ var textRecipes = [
 		'difficulty': 'easy',
 		'duration': '20 minutes',
 		'countServes': '4', 
-		'isVegan': true
-	},
-	{
-		'id': 5,
-		'description': 'Tortillas: the base of Latin American cuisine. For those unskilled cooks, they’re a true lifesaver. You can just fill them with virtually anything that’s lying around in your fridge or pantry. You’ll never have a boring meal if you have tortillas!',
-		'ingredients': [
-			{'name': '1 cup of corn flour'},
-			{'name': '¾ cup of warm water'},
-			{'name': '¼ tsp. salt'}
-		],
-		'preparation': 'Combine the corn flour with warm water until the dough comes together.  Make sure the dough is moist enough so that the tortillas don’t loose their flexibility. Add salt and separate the dough into 1-inch sized balls. \nPreheat a large skillet over medium-high heat.  Cover two cutting boards or plates with waxing paper and press each ball softly until flat. Place the tortilla on the skillet.  Don’t forget to turn it over and allow it to puff up. Repeat the process with the remaining dough.',
-		'difficulty': 'easy',
-		'duration': '30 minutes',
-		'countServes': '6',
 		'isVegan': true
 	},
 	{
@@ -276,6 +276,19 @@ var textRecipes = [
 	},
 	{
 		'id': 7,
+		'description': 'The taste of agua dulce is pleasant and heartwarming, the perfect comforting beverage during a cold, rainy day.  Rumor has it; the perfect cure fore a cold is a steaming cup of agua dulce with a little rum in it.',
+		'ingredients': [
+			{'name': '2 tbsp of panela (whole cane sugar)'},
+			{'name': '1 cup of boiling water'}
+		],
+		'preparation': 'Boil one cup of water and add panela until it dissolves.',
+		'difficulty': 'easy',
+		'duration': '5 minutes',
+		'countServes': '1',
+		'isVegan': false
+	},
+	{
+		'id': 8,
 		'description': 'Original from the northern part of Costa Rica, a tall glass of horchata is all you will need to quench your thirst and fight through the sometimes unbearable Costa Rican heat.  Hating the weather? Just… keep calm and drink a cold glass of horchata.',
 		'ingredients': [
 			{'name': '2 cups of rice'},
@@ -285,14 +298,14 @@ var textRecipes = [
 			{'name': '1 tsp. of vanilla extract'},
 			{'name': '1 cup of sugar'}
 		],
-		'preparation': 'Leave in the milk and the rice overnight in a pitcher in the refrigerator. Once the rice has softened, place the mixture in a blender and drain. Discard the rice. Incorporate the cocoa, cinnamon, vanilla and sugar.  Mix well.  Chill well before enjoying your drink.',
+		'preparation': 'Leave the milk and the rice overnight in a pitcher in the refrigerator. Once the rice has softened, place the mixture in a blender and drain. Discard the rice. Incorporate the cocoa, cinnamon, vanilla and sugar.  Mix well.  Chill well before enjoying your drink.',
 		'difficulty': 'easy',
 		'duration': '15 minutes',
 		'countServes': '3',
 		'isVegan': false
 	},
 	{
-		'id': 8,
+		'id': 9,
 		'description': 'The signature dish of the province of Limón. This surprisingly refreshing and spicy drink is usually prepared with unrefined whole cane sugar, known in Costa Rica as tapa de dulce or panela.  We’ve modified the recipe with supermarket-friendly products.',
 		'ingredients': [
 			{'name': '4 cups of water'},
@@ -306,19 +319,6 @@ var textRecipes = [
 		'duration': '15 minutes',
 		'countServes': '4',
 		'isVegan': true
-	},
-	{
-		'id': 9,
-		'description': 'The taste of agua dulce is pleasant and heartwarming, the perfect comforting beverage during a cold, rainy day.  Rumor has it; the perfect cure fore a cold is a steaming cup of agua dulce with a little rum in it.',
-		'ingredients': [
-			{'name': '2 tbsp of panela (whole cane sugar)'},
-			{'name': '1 cup of boiling water'}
-		],
-		'preparation': 'Boil one cup of water and add panela until it dissolves.',
-		'difficulty': 'easy',
-		'duration': '5 minutes',
-		'countServes': '1',
-		'isVegan': false
 	},
 	{
 		'id': 10,
@@ -341,6 +341,21 @@ var textRecipes = [
 	},
 	{
 		'id': 11,
+		'description': 'A perfect dessert for those amateur bakers. Although the original recipe is made with coconut flesh, milk and sugar, but we are introducing you to a much lighter, easy-to-make dessert. Store this babies in a tin can, and you’ll be enjoying the gooey goodness of paradise for days.',
+		'ingredients': [
+			{'name': '2 2/3 cups of shredded unsweetened coconut'},
+			{'name': '¾ cup of sweetened condensed milk'},
+			{'name': '1 egg'},
+			{'name': '1 tsp. almond extract'}
+		],
+		'preparation': 'Preheat the oven at 325 F. In a bowl, whisk in the condensed milk, egg and almond extract before incorporating the shredded coconut. Mix in well.  Pour one spoonful of the mixture for each cocada, making sure these are one inch apart. Bake until golden and cool on a wire rack.',
+		'difficulty': 'easy',
+		'duration': '20 minutes',
+		'countServes': '12',
+		'isVegan': false
+	},
+	{
+		'id': 12,
 		'description': 'In Costa Rica, corn is used as a main ingredient in both sweet and savory dishes. A sweeter version of the corn dough may be used for tortillas, or for breads, such as the sweet cornbread. And there is nothing more perfect than a cup of freshly brewed coffee with milk and a piece of warm cornbread to lighten up your afternoon.',
 		'ingredients': [
 			{'name': '2 cups of sweet corn'},
@@ -354,21 +369,6 @@ var textRecipes = [
 		'difficulty': 'easy',
 		'duration': '60 minutes',
 		'countServes': '10',
-		'isVegan': false
-	},
-	{
-		'id': 12,
-		'description': 'A perfect dessert for those amateur bakers. Although the original recipe is made with coconut flesh, milk and sugar, but we are introducing you to a much lighter, easy-to-make dessert. Store this babies in a tin can, and you’ll be enjoying the gooey goodness of paradise for days.',
-		'ingredients': [
-			{'name': '2 2/3 cups of shredded unsweetened coconut'},
-			{'name': '¾ cup of sweetened condensed milk'},
-			{'name': '1 egg'},
-			{'name': '1 tsp. almond extract'}
-		],
-		'preparation': 'Preheat the oven at 325 F. In a bowl, whisk in the condensed milk, egg and almond extract before incorporating the shredded coconut. Mix in well.  Pour one spoonful of the mixture for each cocada, making sure these are one inch apart. Bake until golden and cool on a wire rack.',
-		'difficulty': 'easy',
-		'duration': '20 minutes',
-		'countServes': '12',
 		'isVegan': false
 	}
 ]

@@ -7,5 +7,6 @@ Template.currentRecipe.helpers({
 Template.currentRecipe.events({
 	'click .recipe-close': function () {
 		$('#currentRecipe').removeClass('opened');
+		$('body').removeClass('noscroll');
 	}
 });

@@ -1,7 +1,7 @@
 <template name="smallRecipe">
 	<div class="item">
 		<div class="text-center">
-			<div class="vertical" style="background-color:#{{color}}">
+			<div class="vertical" style="background-color:#{{#if isBadColor}}fdf6dc {{else}}{{color}} {{/if}}">
 				<div class="vertical-son">
 					<img src="{{thumbnail}}" />	
 				</div>

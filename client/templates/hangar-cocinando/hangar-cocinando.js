@@ -1,6 +1,8 @@
 Template.cocinando.rendered = function () {
 	Meteor.call("getAllRecipes", function (error, result) { 
+
     	Session.set('currentRecipes', result);
+
 	    setTimeout(function(){
 			$('#recipesSlide').fadeIn(300).slick({
 				arrows: false,
@@ -9,13 +11,16 @@ Template.cocinando.rendered = function () {
 				centerMode: true,
 				variableWidth: true
 			});
+
 			$('#cookSmall').on('click', '.smallSeeRecipe', function(event){
 				Meteor.call("getCurrentRecipe", $(event.target).attr('data-id'), function (error, result) { 
 					Session.set('currentRecipe', result);
+					$('body').addClass('noscroll');
 					$('#currentRecipe').addClass('opened');
 		    	});
 			});
 		}, 300);
+
     });
 };
 
@@ -41,7 +46,6 @@ Template.cocinando.helpers({
 		if($(window).width() > 600){
 			$('.recipes .recipe').height($('.recipe').first().width());
 		}else{
-			$('.recipe .vertical img').height($('.recipe .vertical img').first().width()); 
 			$('.recipes .recipe').height('auto');
 		}
 		

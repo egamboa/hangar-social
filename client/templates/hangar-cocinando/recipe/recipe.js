@@ -8,6 +8,7 @@ Template.recipe.events({
 		Meteor.call("getCurrentRecipe", self.id, function (error, result) { 
 			Session.set('currentRecipe', result);
 			$('#currentRecipe').addClass('opened');
+			$('body').addClass('noscroll');
     	});
 	}
 });
