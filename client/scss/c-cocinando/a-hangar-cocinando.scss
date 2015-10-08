@@ -18,7 +18,7 @@ body{
 
             .vertical{
                 display: table-cell;
-                vertical-align: middle;
+                vertical-align: middle; 
                 h1{
                     color: #314040;
                     font-family: din-regular;
@@ -31,6 +31,17 @@ body{
                     width: 100%;
                     padding-top: 10%;
                 } 
+                .arrow{
+                    width: 100%;
+                    margin-top: 5%;
+                    img{
+                        left: 48%;
+                        padding: 0;
+                        width: 3%;
+                        animation: arrowMove 1s infinite alternate;
+                        transform-origin: center;
+                    }
+                }
             }
             
 
@@ -179,7 +190,7 @@ body{
                 text-align: center;
                 vertical-align: middle;
                 img{
-                    
+
                 }
             }
             &.tenedor{
@@ -347,5 +358,14 @@ body{
             }
         }
     }
+} 
+
+
+@-webkit-keyframes arrowMove {
+    to { transform: scale(1.4); }
+}
+
+@keyframes arrowMove {
+    to { transform: scale(1.4); }
 }   
 
