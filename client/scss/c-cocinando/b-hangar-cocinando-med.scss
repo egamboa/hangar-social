@@ -28,3 +28,34 @@
 	    }
 	}
 }
+@media only screen and (max-width: 750px) and (min-width: 600px) {
+	body{
+		#currentRecipe{
+			.recipe-holder{
+				.recipe-content{
+		            h1{
+		                span{
+		                	display: block;
+		                }
+		            }
+		            h2{
+		            }
+		            p, li{
+		            }
+		            span.separator{
+		            }
+		            .recipe-info{
+		                span{
+		                	display: block;
+		                }
+		            }
+		            ul, li{
+		            }
+		            .recipe-close{
+		            }
+		        }
+			}
+	    }
+	}
+}
+

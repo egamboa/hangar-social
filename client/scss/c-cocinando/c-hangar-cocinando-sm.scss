@@ -127,6 +127,61 @@
             display: none;
         }
     }
+    body{
+        #currentRecipe{
+            .mobile-header{
+                height: 64px;
+                background-color: #90D2CB;
+                border-bottom: 1px solid #314040;
+                h1{ 
+                    padding: 2px;
+                    font-family: din-bold;
+                    font-size: 22px;
+                    color: #314040;
+                    font-style: normal;
+                    margin-left: 60px;
+                    margin-top: 14px;
+                    float: left;
+                }
+                a.recipe-close{
+                    float: right;
+                    display: block;
+                    width: 64px;
+                    height: 64px;
+                    border-left: 1px solid #314040;
+                    text-align: center;
+                    img{
+                        margin-top: 28px;
+                    }
+                }
+
+            }
+            .recipe-holder{
+                .recipe-content{
+                    h1{
+                        span{
+                            display: none;
+                        }
+                    }
+                    h2{
+                    }
+                    p, li{
+                    }
+                    span.separator{
+                    }
+                    .recipe-info{
+                        span{
+                            display: block;
+                        }
+                    }
+                    ul, li{
+                    }
+                    .recipe-close{
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 321px) {
