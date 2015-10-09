@@ -1,5 +1,6 @@
 Template.smallRecipe.rendered = function (){
 	if($('#recipesSlide .item').size() == Session.get('currentRecipes').length){
+		$('#cookSmall .loader').fadeOut(300);
 		$('#recipesSlide').fadeIn(300).slick({
 			arrows: false,
 			slidesToShow: 1,

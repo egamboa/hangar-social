@@ -51,7 +51,11 @@
 						</div>
 						<span class="separator"></span>
 						<h2>Preparation</h2>
-						<p>{{recipe.preparation}}</p>
+						<div class="preps">
+							{{#each recipe.preparation}}
+								<p>{{content}}</p>
+							{{/each}}
+						</div>
 					</div>
 				</div>
 			</div>
