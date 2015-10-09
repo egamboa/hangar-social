@@ -346,6 +346,16 @@ body{
         padding-top: 28px;
         background-color: #3d464d;
         .container{
+            padding: 0;
+            .social{
+                .social-links{
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 15px;
+                    display: block;
+                    float: left;
+                }
+            }
             .pull-right .twitter-logo , .face-logo {
                 margin-right: 25px;
             }
