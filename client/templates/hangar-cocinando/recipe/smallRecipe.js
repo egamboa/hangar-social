@@ -10,6 +10,9 @@ Template.smallRecipe.rendered = function (){
 		});
 		$('#cookSmall').on('click', '.smallSeeRecipe', function(event){
 			Meteor.call("getCurrentRecipe", $(event.target).attr('data-id'), function (error, result) { 
+				$('.recipe-holder').animate({
+					scrollTop: 0
+				}, 300);
 				Session.set('currentRecipe', result);
 				$('body').addClass('noscroll');
 				$('#currentRecipe').addClass('opened');

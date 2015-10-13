@@ -4,10 +4,9 @@ Template.cocinando.rendered = function () {
     });
 };
 
-Session.set("resize", null); 
-Session.set("wSize", $(window).width());
-
 Meteor.startup(function () {
+	Session.set("resize", null); 
+	Session.set("wSize", $(window).width());
 	window.addEventListener('resize', function(){
 		Session.set("resize", new Date());
 		Session.set("wSize", $(window).width());
