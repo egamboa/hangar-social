@@ -265,10 +265,9 @@ body{
             background-color: #FDF6DC;
             overflow-y: scroll;
             -ms-overflow-style: none;
-            overflow: -moz-scrollbars-none;
             &::-webkit-scrollbar { width: 0 !important }
             .recipe-content{
-                padding: 120px 0 0;
+                padding: 120px 0 25px;
                 h1{
                     font-family: din-bold;
                     font-style: normal;

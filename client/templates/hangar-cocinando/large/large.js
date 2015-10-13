@@ -8,6 +8,6 @@ Template.cookLarge.events({
 	'click div.arrow': function () {
 		$('html, body').animate({
 			scrollTop: $("div.allRecipes").offset().top
-		}, 1000);
+		}, 500);
 	}
 });

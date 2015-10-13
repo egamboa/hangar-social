@@ -356,7 +356,9 @@ var textRecipes = [
 				]
 			}
 		],
-		'preparation': 'Boil one cup of water and add panela until it dissolves.',
+		'preparation':[ 
+			{'content' : 'Boil one cup of water and add panela until it dissolves.'} 
+		],
 		'difficulty': 'easy',
 		'duration': '5 minutes',
 		'countServes': '1',
